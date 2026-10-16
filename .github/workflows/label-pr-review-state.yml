@@ -84,7 +84,7 @@ concurrency:
 
 jobs:
     resolve:
-        name: Zoo Code / resolve PRs to reconcile
+        name: Ashnova Code / resolve PRs to reconcile
         if: >-
             github.event_name != 'issue_comment' ||
             (github.event.issue.pull_request && github.event.comment.user.login == 'coderabbitai[bot]')
@@ -190,7 +190,7 @@ jobs:
                       core.setOutput('pr_numbers', JSON.stringify(prNumbers));
 
     reconcile:
-        name: Zoo Code / reconcile PR review state
+        name: Ashnova Code / reconcile PR review state
         needs: resolve
         if: >-
             (github.event_name != 'issue_comment' ||
@@ -296,8 +296,8 @@ jobs:
                       // Advisory priority signal only — kept outside stateLabels so it never
                       // replaces or blocks the review-state queue labels.
                       const communityApprovedLabel = 'community-approved';
-                      const reviewGateName = 'Zoo Code / PR review gate';
-                      const reconciliationCheckName = 'Zoo Code / reconcile PR review state';
+                      const reviewGateName = 'Ashnova Code / PR review gate';
+                      const reconciliationCheckName = 'Ashnova Code / reconcile PR review state';
 
                       if (context.eventName === 'issue_comment' &&
                           (!context.payload.issue?.pull_request ||

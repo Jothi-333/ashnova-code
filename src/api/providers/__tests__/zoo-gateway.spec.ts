@@ -201,7 +201,7 @@ describe("ZooGatewayHandler", () => {
 				apiKey: mockOptions.zooSessionToken,
 				defaultHeaders: expect.objectContaining({
 					"HTTP-Referer": "https://github.com/Zoo-Code-Org/Zoo-Code",
-					"X-Title": "Zoo Code",
+					"X-Title": "Ashnova Code",
 					"X-Zoo-Editor": "vscode",
 					"X-Zoo-Extension-Version": Package.version,
 				}),
@@ -242,7 +242,7 @@ describe("ZooGatewayHandler", () => {
 		it("requires authentication at request time when no session token is available", async () => {
 			const handler = new ZooGatewayHandler({})
 			await expect(drainCreateMessage(handler)).rejects.toThrow(
-				"Zoo Gateway requires authentication. Please sign in to Zoo Code first.",
+				"Zoo Gateway requires authentication. Please sign in to Ashnova Code first.",
 			)
 		})
 
@@ -273,7 +273,7 @@ describe("ZooGatewayHandler", () => {
 			const stream = handler.createMessage("You are helpful.", [{ role: "user", content: "Hello" }])
 
 			await expect(collectStream(stream)).rejects.toThrow(
-				"Zoo Gateway requires authentication. Please sign in to Zoo Code first.",
+				"Zoo Gateway requires authentication. Please sign in to Ashnova Code first.",
 			)
 		})
 

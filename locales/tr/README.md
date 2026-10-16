@@ -1,5 +1,5 @@
 <p align="center">
-          <a href="https://marketplace.visualstudio.com/items?itemName=ZooCodeOrganization.zoo-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ashnova.ashnova-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
           <a href="https://x.com/ZooCodeDev"><img src="https://img.shields.io/badge/ZooCode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
           <a href="https://discord.gg/VxfP4Vx3gX"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
           <a href="https://www.reddit.com/r/ZooCode/"><img src="https://img.shields.io/badge/Join%20r%2FZooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/ZooCode"></a>
@@ -9,14 +9,14 @@
           <em>Hızlıca yardım al → <a href="https://discord.gg/VxfP4Vx3gX">Discord'a katıl</a> • Eşzamansız mı tercih ediyorsun? → <a href="https://www.reddit.com/r/ZooCode/">r/ZooCode'a katıl</a></em>
         </p>
 
-        # Zoo Code
+        # Ashnova Code
 
         > AI destekli dev ekibin, doğrudan editörünün içinde
 
-        ## Biz Zoo Code'uz
+        ## Biz Ashnova Code'uz
 
 > Roo ekibi, [Roomote](https://roomote.dev/) üzerine odaklanmak için Roo
-> Code'un aktif geliştirmesini durdurduktan sonra Zoo Code bu projenin
+> Code'un aktif geliştirmesini durdurduktan sonra Ashnova Code bu projenin
 > geliştirilmesini sürdürüyor. İnşa ettikleri her şey için Roo ekibine
 > teşekkürler.
 >
@@ -29,15 +29,15 @@
 > [Reddit](https://www.reddit.com/r/ZooCode), ya da
 > [PR veya issue aç](https://github.com/Zoo-Code-Org/Zoo-Code).
 >
-> _-Zoo Code Team_
+> _-Ashnova Code Team_
 
-## Roo Code'dan Zoo Code'a geçiş
+## Roo Code'dan Ashnova Code'a geçiş
 
-Roo Code'dan Zoo Code'a geçmek için hızlı bir rehberi [Roo→Zoo geçiş rehberinde](https://docs.zoocode.dev/roo-to-zoo-migration) bulabilirsin. Geçiş sürecinde kullanıcılara elimizden geldiğince yardımcı olmak istiyoruz ve bunun için [Reddit](https://www.reddit.com/r/ZooCode) ile [Discord](https://discord.gg/VxfP4Vx3gX) topluluklarımız var. Bir sorun yaşarsan ya da soruların olursa gel ve sor.
+Roo Code'dan Ashnova Code'a geçmek için hızlı bir rehberi [Roo→Zoo geçiş rehberinde](https://docs.zoocode.dev/roo-to-zoo-migration) bulabilirsin. Geçiş sürecinde kullanıcılara elimizden geldiğince yardımcı olmak istiyoruz ve bunun için [Reddit](https://www.reddit.com/r/ZooCode) ile [Discord](https://discord.gg/VxfP4Vx3gX) topluluklarımız var. Bir sorun yaşarsan ya da soruların olursa gel ve sor.
 
-## Zoo Code'un Roo Code'dan Sonra Ekledikleri
+## Ashnova Code'un Roo Code'dan Sonra Ekledikleri
 
-Zoo Code, Roo Code'un oluşturduğu temel üzerine inşa ediliyor ve bu temeli şunlarla genişletmeye devam ediyor:
+Ashnova Code, Roo Code'un oluşturduğu temel üzerine inşa ediliyor ve bu temeli şunlarla genişletmeye devam ediyor:
 
 - **Semble kod tabanı zekâsı** — otomatik kurulumla çalışan, ayrı bir indeksleme iş akışı gerektirmeyen hızlı ve isteğe bağlı semantik kod araması.
 - **Daha güçlü Orchestrator iş akışları** — daha güvenli görev devri, paralel görev koordinasyonu, güvenilir üst/alt görev kurtarma ve alt görevlerle sağlayıcı profilleri arasında daha iyi yalıtım.
@@ -53,7 +53,7 @@ Zoo Code, Roo Code'un oluşturduğu temel üzerine inşa ediliyor ve bu temeli �
 - 🧭 **Görev güvenilirliği:** Bu sürüm iptal işlemeyi, araç turu devam ettirmeyi ve görev mesajı kaydetmeyi düzeltir.
 - ⚡ **Daha hızlı düzenleme ve sohbet:** Dosya yazmaları varsayılan olarak yapay gecikmeler kullanmaz. Sohbet mesajları daha az dosya verisi taşır ve kod eylemleri en son etkin sohbete ulaşır.
 
-## Zoo Code SİZİN İçin Ne Yapabilir?
+## Ashnova Code SİZİN İçin Ne Yapabilir?
 
 - Doğal dil açıklamalarından kod üretin
 - Modlarla Uyum Sağlayın: Kod, Mimar, Sor, Hata Ayıkla ve Özel Modlar
@@ -65,7 +65,7 @@ Zoo Code, Roo Code'un oluşturduğu temel üzerine inşa ediliyor ve bu temeli �
 
 ## Modlar
 
-Zoo Code, sizin çalışma şeklinize uyum sağlar, tam tersi değil:
+Ashnova Code, sizin çalışma şeklinize uyum sağlar, tam tersi değil:
 
 - Kod Modu: günlük kodlama, düzenlemeler ve dosya işlemleri
 - Mimar Modu: sistemleri, özellikleri ve geçişleri planlayın
@@ -77,7 +77,7 @@ Daha fazla: [Modları kullanma](https://docs.zoocode.dev/basic-usage/using-modes
 
 ## Kaynaklar
 
-- **[Dokümantasyon](https://docs.zoocode.dev):** Zoo Code'u yükleme, yapılandırma ve ustalaşma konusundaki resmi kılavuz.
+- **[Dokümantasyon](https://docs.zoocode.dev):** Ashnova Code'u yükleme, yapılandırma ve ustalaşma konusundaki resmi kılavuz.
 - **[Discord Sunucusu](https://discord.gg/VxfP4Vx3gX):** Gerçek zamanlı yardım ve tartışma için topluluğa katılın.
 - **[Reddit Topluluğu](https://www.reddit.com/r/ZooCode):** Deneyimlerinizi paylaşın ve başkalarının ne inşa ettiğini görün.
 - **[GitHub Sorunları](https://github.com/Zoo-Code-Org/Zoo-Code/issues):** Hataları bildirin ve gelişimi takip edin.
@@ -101,13 +101,13 @@ pnpm install
 
 3. **Uzantıyı çalıştırın**:
 
-Zoo Code uzantısını çalıştırmanın birkaç yolu vardır:
+Ashnova Code uzantısını çalıştırmanın birkaç yolu vardır:
 
 ### Geliştirme Modu (F5)
 
 Aktif geliştirme için VSCode'un yerleşik hata ayıklama özelliğini kullanın:
 
-VSCode'da `F5` tuşuna basın (veya **Çalıştır** → **Hata Ayıklamayı Başlat**'a gidin). Bu, Zoo Code uzantısının çalıştığı yeni bir VSCode penceresi açacaktır.
+VSCode'da `F5` tuşuna basın (veya **Çalıştır** → **Hata Ayıklamayı Başlat**'a gidin). Bu, Ashnova Code uzantısının çalıştığı yeni bir VSCode penceresi açacaktır.
 
 - Web görünümündeki değişiklikler anında görünecektir.
 - Çekirdek uzantıdaki değişiklikler de otomatik olarak sıcak yeniden yüklenecektir.
@@ -155,7 +155,7 @@ Sürüm oluşturma ve yayınlama için [changesets](https://github.com/changeset
 
 ## Sorumluluk Reddi Beyanı
 
-**Lütfen dikkat** Zoo Code, Zoo Code ile bağlantılı olarak sağlanan veya kullanıma sunulan herhangi bir kod, model veya diğer araçlar, ilgili üçüncü taraf araçları veya ortaya çıkan çıktılarla ilgili olarak **hiçbir** beyanda bulunmaz veya garanti vermez. Bu tür araçların veya çıktıların kullanımıyla ilişkili **tüm riskleri** üstlenirsiniz; bu tür araçlar **"OLDUĞU GİBİ"** ve **"MEVCUT OLDUĞU GİBİ"** esasına göre sağlanır. Bu tür riskler, fikri mülkiyet ihlali, siber güvenlik açıkları veya saldırıları, önyargı, yanlışlıklar, hatalar, kusurlar, virüsler, kesintiler, mal kaybı veya hasarı ve/veya kişisel yaralanmaları içerebilir, ancak bunlarla sınırlı değildir. Bu tür araçların veya çıktıların kullanımından (yasallığı, uygunluğu ve sonuçları dahil ancak bunlarla sınırlı olmamak üzere) yalnızca siz sorumlusunuz.
+**Lütfen dikkat** Ashnova Code, Ashnova Code ile bağlantılı olarak sağlanan veya kullanıma sunulan herhangi bir kod, model veya diğer araçlar, ilgili üçüncü taraf araçları veya ortaya çıkan çıktılarla ilgili olarak **hiçbir** beyanda bulunmaz veya garanti vermez. Bu tür araçların veya çıktıların kullanımıyla ilişkili **tüm riskleri** üstlenirsiniz; bu tür araçlar **"OLDUĞU GİBİ"** ve **"MEVCUT OLDUĞU GİBİ"** esasına göre sağlanır. Bu tür riskler, fikri mülkiyet ihlali, siber güvenlik açıkları veya saldırıları, önyargı, yanlışlıklar, hatalar, kusurlar, virüsler, kesintiler, mal kaybı veya hasarı ve/veya kişisel yaralanmaları içerebilir, ancak bunlarla sınırlı değildir. Bu tür araçların veya çıktıların kullanımından (yasallığı, uygunluğu ve sonuçları dahil ancak bunlarla sınırlı olmamak üzere) yalnızca siz sorumlusunuz.
 
 ---
 
@@ -167,8 +167,8 @@ Topluluk katkılarını çok seviyoruz! [CONTRIBUTING.md](CONTRIBUTING.md) dosya
 
 ## Lisans
 
-[Apache 2.0 © 2025 Zoo Code Org](../../LICENSE)
+[Apache 2.0 © 2025 Ashnova Code Org](../../LICENSE)
 
 ---
 
-**Zoo Code'un keyfini çıkar!** Onu ister kısa tasma ile yakınında tut, ister kendi başına dolaşmasına izin ver, neler inşa edeceğini görmek için sabırsızlanıyoruz. Soruların veya özellik fikirlerin varsa bir [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) aç ya da bir [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions) başlat. Mutlu kodlamalar!
+**Ashnova Code'un keyfini çıkar!** Onu ister kısa tasma ile yakınında tut, ister kendi başına dolaşmasına izin ver, neler inşa edeceğini görmek için sabırsızlanıyoruz. Soruların veya özellik fikirlerin varsa bir [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) aç ya da bir [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions) başlat. Mutlu kodlamalar!

@@ -49,14 +49,14 @@ export async function run(): Promise<void> {
 		throw new Error(`Expected VS Code ${expectedVersion}, launched ${vscode.version}`)
 	}
 
-	const extension = vscode.extensions.getExtension<RooCodeTestAPI>("ZooCodeOrganization.zoo-code")
+	const extension = vscode.extensions.getExtension<RooCodeTestAPI>("ashnova.ashnova-code")
 	if (!extension) {
-		throw new Error("Zoo Code extension not found")
+		throw new Error("Ashnova Code extension not found")
 	}
 	const api = extension.isActive ? extension.exports : await extension.activate()
 
-	await vscode.commands.executeCommand("zoo-code.SidebarProvider.focus")
-	await poll(async () => api.isReady(), Boolean, "Zoo Code webview activation")
+	await vscode.commands.executeCommand("ashnova-code.SidebarProvider.focus")
+	await poll(async () => api.isReady(), Boolean, "Ashnova Code webview activation")
 
 	const captures: Record<string, WebviewThemeFixture> = {}
 	for (const theme of themeFixtureDefinitions) {

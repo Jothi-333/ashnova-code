@@ -5,7 +5,7 @@ import { waitUntilCompleted, waitFor } from "./utils"
 import { SCHED_COMPLETED_PROMPT } from "../fixtures/subtasks"
 
 // Regression test for the "Work #1 (no message)" title-clobber bug reported
-// against Zoo Code v3.76.0 (Discord, 2026-08-06).
+// against Ashnova Code v3.76.0 (Discord, 2026-08-06).
 //
 // Root cause: Task#resumeTaskFromHistory() is started fire-and-forget by
 // scheduleTask() after createTaskWithHistoryItem() adds the task to the

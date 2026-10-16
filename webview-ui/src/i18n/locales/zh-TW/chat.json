@@ -1,5 +1,5 @@
 {
-	"greeting": "歡迎使用 Zoo Code！",
+	"greeting": "歡迎使用 Ashnova Code！",
 	"task": {
 		"title": "工作",
 		"expand": "展開工作",
@@ -185,7 +185,7 @@
 			"docs": "說明文件",
 			"goToSettings": "設定",
 			"connection": "連線錯誤。請確保您有可用的網際網路連線。",
-			"unknown": "未知 API 錯誤。請聯絡 Zoo Code 技術支援。",
+			"unknown": "未知 API 錯誤。請聯絡 Ashnova Code 技術支援。",
 			"claudeCodeNotAuthenticated": "您需要登入才能使用 Claude Code。前往設定並點選「登入 Claude Code」以進行驗證。"
 		}
 	},
@@ -362,10 +362,10 @@
 		"triggerLabelAll": "BRRR"
 	},
 	"announcement": {
-		"title": "Zoo Code {{version}} 已發布",
-		"support": "請在 <githubLink>GitHub</githubLink> 上為 Zoo Code 加星支持我們。",
+		"title": "Ashnova Code {{version}} 已發布",
+		"support": "請在 <githubLink>GitHub</githubLink> 上為 Ashnova Code 加星支持我們。",
 		"release": {
-			"heading": "Zoo Code v3.88.0 新功能",
+			"heading": "Ashnova Code v3.88.0 新功能",
 			"highlight1": "✨ Provider 與模型支援：使用 Grok Build 與改進後的自訂模型支援。本版本也修正了 Bedrock 模型上限，並傳送 Codex verbosity 設定。",
 			"highlight2": "🧭 工作可靠性：本版本修正了取消處理、tool turn 續行與工作訊息保存。",
 			"highlight3": "⚡ 更快的編輯與聊天：檔案寫入預設不再使用人為延遲。聊天訊息攜帶更少的檔案資料，程式碼動作會送達最近活動的聊天。"
@@ -400,7 +400,7 @@
 	"profileViolationWarning": "目前設定檔與您的組織設定不相容",
 	"shellIntegration": {
 		"title": "命令執行警告",
-		"description": "命令正在沒有 VS Code 終端機 Shell 整合的情況下執行。若要隱藏此警告，可在 <settingsLink>Zoo Code 設定</settingsLink> 的 <strong>終端機</strong> 區塊中停用 Shell 整合，或使用下方連結排解 VS Code 終端機整合問題。",
+		"description": "命令正在沒有 VS Code 終端機 Shell 整合的情況下執行。若要隱藏此警告，可在 <settingsLink>Ashnova Code 設定</settingsLink> 的 <strong>終端機</strong> 區塊中停用 Shell 整合，或使用下方連結排解 VS Code 終端機整合問題。",
 		"troubleshooting": "點選此處查看 Shell 整合說明文件。"
 	},
 	"ask": {

@@ -75,7 +75,7 @@ export class OpenRouterEmbedder implements IEmbedder {
 				apiKey: apiKey,
 				defaultHeaders: {
 					"HTTP-Referer": "https://github.com/Zoo-Code-Org/Zoo-Code",
-					"X-Title": "Zoo Code",
+					"X-Title": "Ashnova Code",
 				},
 			})
 		} catch (error) {

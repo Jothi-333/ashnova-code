@@ -1,6 +1,6 @@
 ---
 name: Add provider model
-about: Add a provider model that is not in Zoo Code
+about: Add a provider model that is not in Ashnova Code
 title: ""
 labels: model
 assignees: ""

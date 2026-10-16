@@ -1,5 +1,5 @@
 {
-	"greeting": "Bem-vindo ao Zoo Code!",
+	"greeting": "Bem-vindo ao Ashnova Code!",
 	"task": {
 		"title": "Tarefa",
 		"expand": "Expandir tarefa",
@@ -98,7 +98,7 @@
 	"enqueueMessage": "Adicionar mensagem à fila (será enviada após a conclusão da tarefa atual)",
 	"scrollToBottom": "Rolar para o final do chat",
 	"scrollToLatestCheckpoint": "Rolar para o checkpoint anterior",
-	"about": "Zoo Code é uma equipe inteira de desenvolvimento de IA em seu editor.",
+	"about": "Ashnova Code é uma equipe inteira de desenvolvimento de IA em seu editor.",
 	"docs": "Confira nossa <DocsLink>documentação</DocsLink> para saber mais.",
 	"onboarding": "Sua lista de tarefas neste espaço de trabalho está vazia.",
 	"rooTips": {
@@ -162,7 +162,7 @@
 			"500": "Erro do servidor do provedor. Algo está errado do lado do provedor, não há nada de errado com sua solicitação.",
 			"docs": "Documentação",
 			"goToSettings": "Configurações",
-			"unknown": "Erro de API desconhecido. Entre em contato com o suporte do Zoo Code.",
+			"unknown": "Erro de API desconhecido. Entre em contato com o suporte do Ashnova Code.",
 			"connection": "Erro de conexão. Certifique-se de que você tem uma conexão de internet funcionando.",
 			"claudeCodeNotAuthenticated": "Você precisa fazer login para usar o Claude Code. Vá para Configurações e clique em \"Entrar no Claude Code\" para autenticar."
 		}
@@ -340,10 +340,10 @@
 		"timerPrefix": "Aprovação automática ativada. Selecionando em {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Zoo Code {{version}} lançado",
-		"support": "Apoie o Zoo Code nos dando uma estrela no <githubLink>GitHub</githubLink>.",
+		"title": "Ashnova Code {{version}} lançado",
+		"support": "Apoie o Ashnova Code nos dando uma estrela no <githubLink>GitHub</githubLink>.",
 		"release": {
-			"heading": "Novidades do Zoo Code v3.88.0",
+			"heading": "Novidades do Ashnova Code v3.88.0",
 			"highlight1": "✨ Suporte a provedores e modelos: Use o Grok Build e um suporte aprimorado a modelos personalizados. Esta versão também corrige os limites de modelos do Bedrock e envia a configuração de verbosidade do Codex.",
 			"highlight2": "🧭 Confiabilidade das tarefas: Esta versão corrige o tratamento de cancelamentos, a continuação de turnos de ferramentas e o salvamento de mensagens de tarefa.",
 			"highlight3": "⚡ Edição e chat mais rápidos: As gravações de arquivos não usam mais atrasos artificiais por padrão. As mensagens do chat carregam menos dados de arquivos, e as ações de código chegam ao último chat ativo."
@@ -370,7 +370,7 @@
 	"profileViolationWarning": "O perfil atual não é compatível com as configurações da sua organização",
 	"shellIntegration": {
 		"title": "Aviso de execução de comando",
-		"description": "Seu comando está sendo executado sem a integração de shell do terminal VSCode. Para suprimir este aviso, você pode desativar a integração de shell na seção <strong>Terminal</strong> das <settingsLink>configurações do Zoo Code</settingsLink> ou solucionar problemas de integração do terminal VSCode usando o link abaixo.",
+		"description": "Seu comando está sendo executado sem a integração de shell do terminal VSCode. Para suprimir este aviso, você pode desativar a integração de shell na seção <strong>Terminal</strong> das <settingsLink>configurações do Ashnova Code</settingsLink> ou solucionar problemas de integração do terminal VSCode usando o link abaixo.",
 		"troubleshooting": "Clique aqui para a documentação de integração de shell."
 	},
 	"ask": {
@@ -428,7 +428,7 @@
 		"ariaLabel": "Versão {{version}} - Clique para ver as notas de lançamento"
 	},
 	"rooCloudCTA": {
-		"title": "Zoo Code Cloud está evoluindo!",
+		"title": "Ashnova Code Cloud está evoluindo!",
 		"description": "Execute agentes remotos na nuvem, acesse suas tarefas de qualquer lugar, colabore com outros e muito mais.",
 		"joinWaitlist": "Cadastre-se para receber as últimas atualizações."
 	},

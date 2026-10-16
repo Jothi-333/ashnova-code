@@ -39,8 +39,8 @@ jobs:
                   package_name=$(node -p "require('./src/package.json').name")
                   publisher=$(node -p "require('./src/package.json').publisher")
 
-                  test "$package_name" = "zoo-code"
-                  test "$publisher" = "ZooCodeOrganization"
+                  test "$package_name" = "ashnova-code"
+                  test "$publisher" = "ashnova"
 
             - name: Validate release metadata
               run: |
@@ -71,14 +71,14 @@ jobs:
                   vsix_path="bin/zoo-code-${package_version}.vsix"
                   test -f "$vsix_path"
 
-                  unzip -l "$vsix_path" > /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/package.json" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/package.nls.json" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/dist/extension.js" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/webview-ui/audio/celebration.wav" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/webview-ui/build/assets/index.js" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/assets/codicons/codicon.ttf" /tmp/zoo-code-vsix-contents.txt
-                  grep -q "extension/assets/vscode-material-icons/icons/3d.svg" /tmp/zoo-code-vsix-contents.txt
+                  unzip -l "$vsix_path" > /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/package.json" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/package.nls.json" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/dist/extension.js" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/webview-ui/audio/celebration.wav" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/webview-ui/build/assets/index.js" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/assets/codicons/codicon.ttf" /tmp/ashnova-code-vsix-contents.txt
+                  grep -q "extension/assets/vscode-material-icons/icons/3d.svg" /tmp/ashnova-code-vsix-contents.txt
 
             - name: Validate packaged manifest identity
               run: |
@@ -88,5 +88,5 @@ jobs:
                   artifact_name=$(unzip -p "$vsix_path" extension/package.json | jq -r '.name')
                   artifact_publisher=$(unzip -p "$vsix_path" extension/package.json | jq -r '.publisher')
 
-                  test "$artifact_name" = "zoo-code"
-                  test "$artifact_publisher" = "ZooCodeOrganization"
+                  test "$artifact_name" = "ashnova-code"
+                  test "$artifact_publisher" = "ashnova"

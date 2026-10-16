@@ -319,7 +319,7 @@ export class OpenAiHandler extends BaseProvider implements SingleCompletionHandl
 			defaultTemperature: 0,
 		})
 		// Local OpenAI-compatible reasoning models (llama.cpp, LM Studio, Ollama)
-		// stream reasoning_content, but Zoo Code strips it from the follow-up context
+		// stream reasoning_content, but Ashnova Code strips it from the follow-up context
 		// unless info.preserveReasoning is set. Whenever createMessage() treats the
 		// model as R1 (deepseek-reasoner id or the R1 format toggle), also treat it
 		// as preserving reasoning so the chain is fed back.

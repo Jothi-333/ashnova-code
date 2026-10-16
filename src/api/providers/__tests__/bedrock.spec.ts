@@ -178,7 +178,7 @@ describe("AwsBedrockHandler", () => {
 			expect(modelInfo.info.contextWindow).toBeDefined()
 		})
 
-		it("should identify itself as Zoo Code in the AWS client app id", () => {
+		it("should identify itself as Ashnova Code in the AWS client app id", () => {
 			expect(mockBedrockRuntimeClient).toHaveBeenCalledWith(
 				expect.objectContaining({
 					userAgentAppId: expect.stringMatching(/^ZooCode#/),

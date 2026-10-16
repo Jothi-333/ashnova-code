@@ -34,14 +34,14 @@ const scenarios: VisualScenario[] = [
 		name: "welcome-dark",
 		scene: "welcome",
 		themeId: "Default Dark Modern",
-		landmark: "Welcome to Zoo Code!",
+		landmark: "Welcome to Ashnova Code!",
 		webviewSnapshot: "electron-welcome-dark-webview.png",
 	},
 	{
 		name: "welcome-high-contrast",
 		scene: "welcome",
 		themeId: "Default High Contrast",
-		landmark: "Welcome to Zoo Code!",
+		landmark: "Welcome to Ashnova Code!",
 	},
 	{
 		name: "chat-dark",
@@ -219,14 +219,14 @@ for (const scenario of scenarios) {
 				.poll(() =>
 					running.page
 						.frames()
-						.some((frame) => frame.url().includes("extensionId=ZooCodeOrganization.zoo-code")),
+						.some((frame) => frame.url().includes("extensionId=ashnova.ashnova-code")),
 				)
 				.toBe(true)
 			const parentFrame = running.page
 				.frames()
-				.find((frame) => frame.url().includes("extensionId=ZooCodeOrganization.zoo-code"))
+				.find((frame) => frame.url().includes("extensionId=ashnova.ashnova-code"))
 			const contentFrame = parentFrame?.childFrames().find((frame) => frame.url().includes("/fake.html"))
-			if (!contentFrame) throw new Error("Zoo Code webview content frame not found")
+			if (!contentFrame) throw new Error("Ashnova Code webview content frame not found")
 			await contentFrame
 				.getByText(scenario.landmark, { exact: false })
 				.waitFor({ state: "visible", timeout: 60_000 })
@@ -252,7 +252,7 @@ for (const scenario of scenarios) {
 
 			// Mask the dynamic token counter so system-prompt changes that alter
 			// token counts do not cause pixel diffs when layout is unchanged.
-			const webviewFrame = running.page.frameLocator('iframe[src*="extensionId=ZooCodeOrganization.zoo-code"]')
+			const webviewFrame = running.page.frameLocator('iframe[src*="extensionId=ashnova.ashnova-code"]')
 			const tokenCountMask = webviewFrame
 				.frameLocator("iframe")
 				.locator('[data-testid="context-tokens-count"],[data-testid="context-window-size"]')
@@ -261,7 +261,7 @@ for (const scenario of scenarios) {
 			})
 
 			if (scenario.webviewSnapshot) {
-				const webview = running.page.locator('iframe[src*="extensionId=ZooCodeOrganization.zoo-code"]')
+				const webview = running.page.locator('iframe[src*="extensionId=ashnova.ashnova-code"]')
 				await expect(webview).toHaveCount(1)
 				await expect(webview).toHaveScreenshot(scenario.webviewSnapshot)
 			}

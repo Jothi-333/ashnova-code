@@ -1,5 +1,5 @@
 <p align="center">
-          <a href="https://marketplace.visualstudio.com/items?itemName=ZooCodeOrganization.zoo-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ashnova.ashnova-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
           <a href="https://x.com/ZooCodeDev"><img src="https://img.shields.io/badge/ZooCode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
           <a href="https://discord.gg/VxfP4Vx3gX"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
           <a href="https://www.reddit.com/r/ZooCode/"><img src="https://img.shields.io/badge/Join%20r%2FZooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/ZooCode"></a>
@@ -9,13 +9,13 @@
           <em>Snel hulp nodig → <a href="https://discord.gg/VxfP4Vx3gX">Word lid van Discord</a> • Liever asynchroon? → <a href="https://www.reddit.com/r/ZooCode/">Word lid van r/ZooCode</a></em>
         </p>
 
-        # Zoo Code
+        # Ashnova Code
 
         > Jouw AI-aangedreven dev-team, rechtstreeks in je editor
 
-        ## Wij zijn Zoo Code
+        ## Wij zijn Ashnova Code
 
-> Zoo Code zet de ontwikkeling van dit project voort nadat het Roo-team
+> Ashnova Code zet de ontwikkeling van dit project voort nadat het Roo-team
 > gestopt is met actieve ontwikkeling van Roo Code om zich te richten op
 > [Roomote](https://roomote.dev/). Dank aan het Roo-team voor alles wat ze
 > hebben gebouwd.
@@ -29,15 +29,15 @@
 > [Reddit](https://www.reddit.com/r/ZooCode), of
 > [open een PR of issue](https://github.com/Zoo-Code-Org/Zoo-Code).
 >
-> _-Zoo Code Team_
+> _-Ashnova Code Team_
 
-## Migratie van Roo Code naar Zoo Code
+## Migratie van Roo Code naar Ashnova Code
 
-Je vindt een korte handleiding voor de overstap van Roo Code naar Zoo Code in de [Roo→Zoo-migratiegids](https://docs.zoocode.dev/roo-to-zoo-migration). We willen gebruikers zo goed mogelijk helpen tijdens de overgang, en precies daarvoor zijn onze [Reddit](https://www.reddit.com/r/ZooCode) en [Discord](https://discord.gg/VxfP4Vx3gX) er. Als je ergens tegenaan loopt of vragen hebt, kom langs en vraag het.
+Je vindt een korte handleiding voor de overstap van Roo Code naar Ashnova Code in de [Roo→Zoo-migratiegids](https://docs.zoocode.dev/roo-to-zoo-migration). We willen gebruikers zo goed mogelijk helpen tijdens de overgang, en precies daarvoor zijn onze [Reddit](https://www.reddit.com/r/ZooCode) en [Discord](https://discord.gg/VxfP4Vx3gX) er. Als je ergens tegenaan loopt of vragen hebt, kom langs en vraag het.
 
-## Wat Zoo Code sinds Roo Code heeft toegevoegd
+## Wat Ashnova Code sinds Roo Code heeft toegevoegd
 
-Zoo Code bouwt voort op het fundament van Roo Code en breidt dit verder uit met:
+Ashnova Code bouwt voort op het fundament van Roo Code en breidt dit verder uit met:
 
 - **Semble-codebase-intelligentie** — snelle semantische codezoekfunctie op aanvraag, met automatische configuratie en zonder afzonderlijke indexeringsworkflow.
 - **Sterkere Orchestrator-workflows** — veiligere delegatie, parallelle taakcoördinatie, betrouwbaar herstel van bovenliggende en onderliggende taken en betere isolatie tussen subtaken en providerprofielen.
@@ -53,7 +53,7 @@ Zoo Code bouwt voort op het fundament van Roo Code en breidt dit verder uit met:
 - 🧭 **Betrouwbaarheid van taken:** Deze release herstelt de afhandeling van annuleringen, het voortzetten van tool-turns en het opslaan van taakberichten.
 - ⚡ **Sneller bewerken en chatten:** Bestandsschrijfbewerkingen gebruiken standaard geen kunstmatige vertragingen meer. Chatberichten bevatten minder bestandsgegevens, en codeacties bereiken de laatst actieve chat.
 
-## Wat kan Zoo Code voor JOU doen?
+## Wat kan Ashnova Code voor JOU doen?
 
 - Genereer code vanuit natuurlijke taalomschrijvingen
 - Aanpassen met Modi: Code, Architect, Vraag, Debug en Aangepaste Modi
@@ -65,7 +65,7 @@ Zoo Code bouwt voort op het fundament van Roo Code en breidt dit verder uit met:
 
 ## Modi
 
-Zoo Code past zich aan jouw werkwijze aan, niet andersom:
+Ashnova Code past zich aan jouw werkwijze aan, niet andersom:
 
 - Code Modus: dagelijks coderen, bewerkingen en bestandsoperaties
 - Architect Modus: plan systemen, specificaties en migraties
@@ -77,7 +77,7 @@ Meer info: [Modi gebruiken](https://docs.zoocode.dev/basic-usage/using-modes) �
 
 ## Hulpbronnen
 
-- **[Documentatie](https://docs.zoocode.dev):** De officiële gids voor het installeren, configureren en beheersen van Zoo Code.
+- **[Documentatie](https://docs.zoocode.dev):** De officiële gids voor het installeren, configureren en beheersen van Ashnova Code.
 - **[Discord Server](https://discord.gg/VxfP4Vx3gX):** Word lid van de community voor realtime hulp en discussie.
 - **[Reddit Community](https://www.reddit.com/r/ZooCode):** Deel je ervaringen en kijk wat anderen bouwen.
 - **[GitHub Issues](https://github.com/Zoo-Code-Org/Zoo-Code/issues):** Meld bugs en volg de ontwikkeling.
@@ -101,13 +101,13 @@ pnpm install
 
 3. **Voer de extensie uit**:
 
-Er zijn verschillende manieren om de Zoo Code-extensie uit te voeren:
+Er zijn verschillende manieren om de Ashnova Code-extensie uit te voeren:
 
 ### Ontwikkelmodus (F5)
 
 Gebruik voor actieve ontwikkeling de ingebouwde foutopsporing van VSCode:
 
-Druk op `F5` (of ga naar **Uitvoeren** → **Foutopsporing starten**) in VSCode. Dit opent een nieuw VSCode-venster waarin de Zoo Code-extensie wordt uitgevoerd.
+Druk op `F5` (of ga naar **Uitvoeren** → **Foutopsporing starten**) in VSCode. Dit opent een nieuw VSCode-venster waarin de Ashnova Code-extensie wordt uitgevoerd.
 
 - Wijzigingen in de webweergave verschijnen onmiddellijk.
 - Wijzigingen in de kernextensie worden ook automatisch hot-herladen.
@@ -155,7 +155,7 @@ We gebruiken [changesets](https://github.com/changesets/changesets) voor versieb
 
 ## Disclaimer
 
-**Let op**: Zoo Code geeft **geen** verklaringen of garanties met betrekking tot enige code, modellen of andere tools die worden geleverd of beschikbaar worden gesteld in verband met Zoo Code, enige geassocieerde tools van derden, of enige resulterende output. U aanvaardt **alle risico's** die gepaard gaan met het gebruik van dergelijke tools of output; dergelijke tools worden geleverd op een **"AS IS"** en **"AS AVAILABLE"** basis. Dergelijke risico's kunnen omvatten, maar zijn niet beperkt tot, inbreuk op intellectueel eigendom, cyberkwetsbaarheden of -aanvallen, vooringenomenheid, onnauwkeurigheden, fouten, defecten, virussen, downtime, verlies of beschadiging van eigendommen, en/of persoonlijk letsel. U bent als enige verantwoordelijk voor uw gebruik van dergelijke tools of output (inclusief, maar niet beperkt tot, de wettigheid, geschiktheid en resultaten daarvan).
+**Let op**: Ashnova Code geeft **geen** verklaringen of garanties met betrekking tot enige code, modellen of andere tools die worden geleverd of beschikbaar worden gesteld in verband met Ashnova Code, enige geassocieerde tools van derden, of enige resulterende output. U aanvaardt **alle risico's** die gepaard gaan met het gebruik van dergelijke tools of output; dergelijke tools worden geleverd op een **"AS IS"** en **"AS AVAILABLE"** basis. Dergelijke risico's kunnen omvatten, maar zijn niet beperkt tot, inbreuk op intellectueel eigendom, cyberkwetsbaarheden of -aanvallen, vooringenomenheid, onnauwkeurigheden, fouten, defecten, virussen, downtime, verlies of beschadiging van eigendommen, en/of persoonlijk letsel. U bent als enige verantwoordelijk voor uw gebruik van dergelijke tools of output (inclusief, maar niet beperkt tot, de wettigheid, geschiktheid en resultaten daarvan).
 
 ---
 
@@ -167,8 +167,8 @@ We houden van bijdragen uit de community! Begin met het lezen van onze [CONTRIBU
 
 ## Licentie
 
-[Apache 2.0 © 2025 Zoo Code Org](../../LICENSE)
+[Apache 2.0 © 2025 Ashnova Code Org](../../LICENSE)
 
 ---
 
-**Veel plezier met Zoo Code!** Of je het nu kort aangelijnd houdt of autonoom laat rondzwerven, we kunnen niet wachten om te zien wat je bouwt. Als je vragen of feature-ideeën hebt, open dan een [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) of start een [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions). Veel codeerplezier!
+**Veel plezier met Ashnova Code!** Of je het nu kort aangelijnd houdt of autonoom laat rondzwerven, we kunnen niet wachten om te zien wat je bouwt. Als je vragen of feature-ideeën hebt, open dan een [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) of start een [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions). Veel codeerplezier!

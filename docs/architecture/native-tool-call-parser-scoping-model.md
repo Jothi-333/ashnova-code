@@ -1,6 +1,6 @@
 # Native tool-call parser request-scope model check
 
-Zoo Code checks native tool-call parser request isolation with a bounded, exhaustive replay model. It is a child submodel in the umbrella task lifecycle verification suite, which runs in CI and locally with:
+Ashnova Code checks native tool-call parser request isolation with a bounded, exhaustive replay model. It is a child submodel in the umbrella task lifecycle verification suite, which runs in CI and locally with:
 
 ```sh
 pnpm lifecycle:model-check

@@ -141,7 +141,7 @@ suite("OpenRouter provider", function () {
 		)
 	})
 
-	test("Should identify as Zoo Code in outbound DEFAULT_HEADERS", async () => {
+	test("Should identify as Ashnova Code in outbound DEFAULT_HEADERS", async () => {
 		requests.length = 0
 
 		const api = globalThis.api
@@ -157,11 +157,11 @@ suite("OpenRouter provider", function () {
 		// actual task request.
 		assert.ok(requests.length > 0, "OpenRouter provider should issue at least one outbound request")
 		for (const captured of requests) {
-			assert.strictEqual(captured.xTitle, "Zoo Code", "X-Title header should identify the extension as Zoo Code")
+			assert.strictEqual(captured.xTitle, "Ashnova Code", "X-Title header should identify the extension as Ashnova Code")
 			assert.strictEqual(
 				captured.httpReferer,
 				"https://github.com/Zoo-Code-Org/Zoo-Code",
-				"HTTP-Referer header should point to the Zoo Code repository",
+				"HTTP-Referer header should point to the Ashnova Code repository",
 			)
 			assert.ok(
 				captured.userAgent?.startsWith("ZooCode/"),

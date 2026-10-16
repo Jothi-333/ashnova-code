@@ -1,6 +1,6 @@
 # Task cleanup protocol model check
 
-Zoo Code checks the in-memory task cleanup protocol with a bounded explicit-state explorer. It runs under the umbrella command:
+Ashnova Code checks the in-memory task cleanup protocol with a bounded explicit-state explorer. It runs under the umbrella command:
 
 ```sh
 pnpm lifecycle:model-check

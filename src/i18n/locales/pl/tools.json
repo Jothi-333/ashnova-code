@@ -36,7 +36,7 @@
 		"invalidImageFormat": "Otrzymano nieprawidłowy format obrazu",
 		"unknownError": "Wystąpił nieznany błąd",
 		"roo": {
-			"authRequired": "Uwierzytelnienie Zoo Code Cloud jest wymagane do generowania obrazów. Zaloguj się do Zoo Code Cloud."
+			"authRequired": "Uwierzytelnienie Ashnova Code Cloud jest wymagane do generowania obrazów. Zaloguj się do Ashnova Code Cloud."
 		}
 	}
 }

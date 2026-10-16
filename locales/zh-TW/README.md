@@ -1,5 +1,5 @@
 <p align="center">
-          <a href="https://marketplace.visualstudio.com/items?itemName=ZooCodeOrganization.zoo-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ashnova.ashnova-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
           <a href="https://x.com/ZooCodeDev"><img src="https://img.shields.io/badge/ZooCode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
           <a href="https://discord.gg/VxfP4Vx3gX"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
           <a href="https://www.reddit.com/r/ZooCode/"><img src="https://img.shields.io/badge/Join%20r%2FZooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/ZooCode"></a>
@@ -9,14 +9,14 @@
           <em>快速取得協助 → <a href="https://discord.gg/VxfP4Vx3gX">加入 Discord</a> • 比較喜歡非同步？→ <a href="https://www.reddit.com/r/ZooCode/">加入 r/ZooCode</a></em>
         </p>
 
-        # Zoo Code
+        # Ashnova Code
 
         > 您的 AI 驅動開發團隊，就在您的編輯器中
 
-        ## 我們是 Zoo Code
+        ## 我們是 Ashnova Code
 
 > 在 Roo 團隊停止 Roo Code 的積極開發、轉而專注於 [Roomote](https://roomote.dev/)
-> 之後，Zoo Code 將繼續開發這個專案。感謝 Roo 團隊所建立的一切。
+> 之後，Ashnova Code 將繼續開發這個專案。感謝 Roo 團隊所建立的一切。
 >
 > 核心團隊由先前曾為 Roo 做出貢獻、並且非常在乎這個外掛的開發者所組成。
 > 我們會持續更新模型、修正 bug，並推出新功能，也計劃仔細傾聽讓這個外掛
@@ -25,15 +25,15 @@
 > [Reddit](https://www.reddit.com/r/ZooCode)，或是
 > [建立 PR 或 issue](https://github.com/Zoo-Code-Org/Zoo-Code)。
 >
-> _-Zoo Code Team_
+> _-Ashnova Code Team_
 
-## 從 Roo Code 遷移到 Zoo Code
+## 從 Roo Code 遷移到 Ashnova Code
 
-你可以在 [Roo→Zoo 遷移指南](https://docs.zoocode.dev/roo-to-zoo-migration) 中找到從 Roo Code 遷移到 Zoo Code 的快速說明。我們希望在大家轉移過程中盡可能提供協助，這也是我們設立 [Reddit](https://www.reddit.com/r/ZooCode) 和 [Discord](https://discord.gg/VxfP4Vx3gX) 社群的原因。如果你遇到問題或有任何疑問，歡迎加入後直接提問。
+你可以在 [Roo→Zoo 遷移指南](https://docs.zoocode.dev/roo-to-zoo-migration) 中找到從 Roo Code 遷移到 Ashnova Code 的快速說明。我們希望在大家轉移過程中盡可能提供協助，這也是我們設立 [Reddit](https://www.reddit.com/r/ZooCode) 和 [Discord](https://discord.gg/VxfP4Vx3gX) 社群的原因。如果你遇到問題或有任何疑問，歡迎加入後直接提問。
 
-## Zoo Code 在 Roo Code 之後新增的功能
+## Ashnova Code 在 Roo Code 之後新增的功能
 
-Zoo Code 以 Roo Code 建立的基礎持續擴充，新增了：
+Ashnova Code 以 Roo Code 建立的基礎持續擴充，新增了：
 
 - **Semble 程式碼庫智慧** — 快速、隨選的語意程式碼搜尋，可自動設定，無需另外執行索引工作流程。
 - **更強大的 Orchestrator 工作流程** — 更安全的工作委派、平行工作協調、可靠的父子工作復原，以及更完善的子工作與供應商設定檔隔離。
@@ -49,7 +49,7 @@ Zoo Code 以 Roo Code 建立的基礎持續擴充，新增了：
 - 🧭 **工作可靠性：** 本版本修正了取消處理、tool turn 續行與工作訊息保存。
 - ⚡ **更快的編輯與聊天：** 檔案寫入預設不再使用人為延遲。聊天訊息攜帶更少的檔案資料，程式碼動作會送達最近活動的聊天。
 
-## Zoo Code 能為您做什麼？
+## Ashnova Code 能為您做什麼？
 
 - 從自然語言描述生成程式碼
 - 使用模式進行調整：程式碼、架構師、詢問、偵錯和自訂模式
@@ -61,7 +61,7 @@ Zoo Code 以 Roo Code 建立的基礎持續擴充，新增了：
 
 ## 模式
 
-Zoo Code 會配合您的工作方式，而非要您配合它：
+Ashnova Code 會配合您的工作方式，而非要您配合它：
 
 - 程式碼模式：日常開發、編輯和檔案操作
 - 架構師模式：規劃系統、規格和遷移
@@ -73,7 +73,7 @@ Zoo Code 會配合您的工作方式，而非要您配合它：
 
 ## 資源
 
-- **[文件](https://docs.zoocode.dev):** 安裝、設定和掌握 Zoo Code 的官方指南。
+- **[文件](https://docs.zoocode.dev):** 安裝、設定和掌握 Ashnova Code 的官方指南。
 - **[Discord 伺服器](https://discord.gg/VxfP4Vx3gX):** 加入社群以獲得即時協助和討論。
 - **[Reddit 社群](https://www.reddit.com/r/ZooCode):** 分享您的經驗，看看其他人正在建立什麼。
 - **[GitHub Issues](https://github.com/Zoo-Code-Org/Zoo-Code/issues):** 回報問題並追蹤開發進度。
@@ -97,13 +97,13 @@ pnpm install
 
 3. **執行擴充功能**:
 
-有幾種方法可以執行 Zoo Code 擴充功能：
+有幾種方法可以執行 Ashnova Code 擴充功能：
 
 ### 開發模式（F5）
 
 若要進行開發，請使用 VSCode 的內建偵錯功能：
 
-在 VSCode 中按 `F5`（或前往 **執行** → **開始偵錯**）。這將在執行 Zoo Code 擴充功能的新 VSCode 視窗中開啟。
+在 VSCode 中按 `F5`（或前往 **執行** → **開始偵錯**）。這將在執行 Ashnova Code 擴充功能的新 VSCode 視窗中開啟。
 
 - 對 webview 的變更將立即顯示。
 - 對核心擴充功能的變更也將自動熱重載。
@@ -151,7 +151,7 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ## 免責聲明
 
-**請注意**，Zoo Code **不**對與 Zoo Code 相關的任何程式碼、模型或其他工具、任何相關的第三方工具或任何由此產生的輸出作出任何陳述或保證。您承擔使用任何此類工具或輸出的**所有風險**；此類工具均按**「原樣」**和**「可用」**的基礎提供。此類風險可能包括但不限於智慧財產權侵權、網路漏洞或攻擊、偏見、不準確、錯誤、缺陷、病毒、停機、財產損失或損害和/或人身傷害。您對自己使用任何此類工具或輸出負全部責任（包括但不限於其合法性、適當性和結果）。
+**請注意**，Ashnova Code **不**對與 Ashnova Code 相關的任何程式碼、模型或其他工具、任何相關的第三方工具或任何由此產生的輸出作出任何陳述或保證。您承擔使用任何此類工具或輸出的**所有風險**；此類工具均按**「原樣」**和**「可用」**的基礎提供。此類風險可能包括但不限於智慧財產權侵權、網路漏洞或攻擊、偏見、不準確、錯誤、缺陷、病毒、停機、財產損失或損害和/或人身傷害。您對自己使用任何此類工具或輸出負全部責任（包括但不限於其合法性、適當性和結果）。
 
 ---
 
@@ -163,8 +163,8 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ## 授權
 
-[Apache 2.0 © 2025 Zoo Code Org](../../LICENSE)
+[Apache 2.0 © 2025 Ashnova Code Org](../../LICENSE)
 
 ---
 
-**盡情享受 Zoo Code！** 不論你是讓它保持短牽繩控制，還是讓它自主行動，我們都迫不及待想看看你會打造出什麼。如果你有問題或功能想法，請開一個 [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) 或發起一個 [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions)。祝你寫程式愉快！
+**盡情享受 Ashnova Code！** 不論你是讓它保持短牽繩控制，還是讓它自主行動，我們都迫不及待想看看你會打造出什麼。如果你有問題或功能想法，請開一個 [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) 或發起一個 [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions)。祝你寫程式愉快！

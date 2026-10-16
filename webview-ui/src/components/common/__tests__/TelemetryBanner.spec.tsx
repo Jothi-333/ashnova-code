@@ -14,8 +14,8 @@ vi.mock("@src/i18n/TranslationContext", () => ({
 	useAppTranslation: () => ({
 		t: (key: string) => {
 			const translations: Record<string, string> = {
-				"welcome:telemetry.helpImprove": "Help Improve Zoo Code",
-				"welcome:telemetry.helpImproveMessage": "Zoo Code collects error and usage data...",
+				"welcome:telemetry.helpImprove": "Help Improve Ashnova Code",
+				"welcome:telemetry.helpImproveMessage": "Ashnova Code collects error and usage data...",
 				"welcome:telemetry.accept": "Accept",
 				"welcome:telemetry.decline": "Decline",
 			}

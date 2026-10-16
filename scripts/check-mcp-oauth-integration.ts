@@ -17,7 +17,7 @@ const advertisedGrantTypes = [
 
 let checkedCases = 0
 
-// Repository policy: Zoo Code implements only these two token-endpoint grants.
+// Repository policy: Ashnova Code implements only these two token-endpoint grants.
 // Keeping this assertion literal prevents an allowlist expansion from silently
 // broadening dynamic registration.
 assert.deepEqual(MCP_OAUTH_GRANT_TYPES, ["authorization_code", "refresh_token"])
@@ -30,14 +30,14 @@ for (let mask = 0; mask < 1 << advertisedGrantTypes.length; mask++) {
 	// Normative MUST: RFC 7591 section 2 says grant_types describes grants the
 	// client can use, and each token-endpoint grant_type must match its registered
 	// value. https://www.rfc-editor.org/rfc/rfc7591.html#section-2
-	// Repository policy: intersect server metadata with Zoo Code's implemented
+	// Repository policy: intersect server metadata with Ashnova Code's implemented
 	// grants, canonicalize order, and never propagate unknown extension values.
 	assert.deepEqual(selected, expected, `unexpected grant selection for ${JSON.stringify(advertised)}`)
 	assert.equal(new Set(selected).size, selected.length, "registration grant types must be unique")
 
 	const buildMetadata = () =>
 		buildMcpOAuthClientMetadata({
-			clientName: "Zoo Code",
+			clientName: "Ashnova Code",
 			redirectUrl: "http://localhost:12345/callback",
 			grantTypes: selected,
 			tokenEndpointAuthMethod: "none",
@@ -66,7 +66,7 @@ for (let mask = 0; mask < 1 << advertisedGrantTypes.length; mask++) {
 }
 
 // RFC 8414 defaults omitted grant_types_supported to authorization_code and
-// implicit. Zoo Code implements only authorization_code from that default.
+// implicit. Ashnova Code implements only authorization_code from that default.
 // https://www.rfc-editor.org/rfc/rfc8414.html#section-2
 assert.deepEqual(selectMcpOAuthGrantTypes(), [AUTHORIZATION_CODE_GRANT_TYPE])
 assert.deepEqual(

@@ -36,7 +36,7 @@
 		"invalidImageFormat": "Formato immagine non valido ricevuto",
 		"unknownError": "Si è verificato un errore sconosciuto",
 		"roo": {
-			"authRequired": "L'autenticazione Zoo Code Cloud è richiesta per la generazione di immagini. Accedi a Zoo Code Cloud."
+			"authRequired": "L'autenticazione Ashnova Code Cloud è richiesta per la generazione di immagini. Accedi a Ashnova Code Cloud."
 		}
 	}
 }

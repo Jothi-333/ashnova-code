@@ -80,7 +80,7 @@ const worktreeCommit = () => stashCommit(spawnSync("git", ["stash", "create"], {
 const turboTasks = () => {
 	const result = spawnSync(
 		command,
-		[...args, "turbo", "--cwd", probeRoot, "run", ...taskNames, "--filter=zoo-code", "--dry=json", "--no-daemon"],
+		[...args, "turbo", "--cwd", probeRoot, "run", ...taskNames, "--filter=ashnova-code", "--dry=json", "--no-daemon"],
 		{ cwd: root, encoding: "utf8" },
 	)
 	if (result.status !== 0) {

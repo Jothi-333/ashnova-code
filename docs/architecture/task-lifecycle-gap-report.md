@@ -2,7 +2,7 @@
 
 ## Purpose and scope
 
-This report inventories Zoo Code task lifecycle state, mutation, persistence, scheduling, streaming, event, and verification boundaries. It is a documentation and formal-model audit, not a claim that the listed production gaps are fixed.
+This report inventories Ashnova Code task lifecycle state, mutation, persistence, scheduling, streaming, event, and verification boundaries. It is a documentation and formal-model audit, not a claim that the listed production gaps are fixed.
 
 The audit covers tracked TypeScript, JSON, YAML, and Markdown under `packages/`, `src/`, `apps/cli`, `apps/vscode-e2e`, `scripts/`, `.github/workflows`, and `docs/architecture`. It traces production symbols to bounded models, focused tests, extension-host E2E, and CI entry points.
 
@@ -19,7 +19,7 @@ Primary references define the audit criteria:
 - Quint’s [model-based testing guidance](https://quint-lang.org/docs/model-based-testing) explicitly separates “the design is right” from “the implementation matches the design” and recommends replaying model traces or validating production traces. Repository criterion: model-authored transitions are proxy evidence until a production adapter, generated trace driver, or trace validator connects them to code.
 - The [Alloy file-system tutorial](https://alloytools.org/tutorials/online/maintext-FS-1.html) states that “no solution found” guarantees only the selected finite scope and warns that facts can overconstrain away examples. Repository criterion: semantic landmarks and action reachability are required alongside invariants, and finite scope is always disclosed.
 - Jepsen’s [consistency reference](https://jepsen.io/consistency) defines a consistency model as the set of legal histories. Repository criterion: cross-host claims must state which histories, conflicts, and dependencies are allowed, not merely that a mutex exists.
-- SQLite’s [transactional guarantee](https://www.sqlite.org/transactional.html) ties crash atomicity to explicit crash and power-failure simulation. Repository criterion: Zoo Code’s per-file smoke tests cannot support crash-atomic or power-loss claims without an equivalent failure-injection harness.
+- SQLite’s [transactional guarantee](https://www.sqlite.org/transactional.html) ties crash atomicity to explicit crash and power-failure simulation. Repository criterion: Ashnova Code’s per-file smoke tests cannot support crash-atomic or power-loss claims without an equivalent failure-injection harness.
 
 Evidence classes used below:
 

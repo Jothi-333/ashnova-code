@@ -32,7 +32,7 @@ vi.mock("@src/i18n/TranslationContext", () => ({
 	useAppTranslation: () => ({
 		t: (key: string, options?: { version?: string }) => {
 			const translations: Record<string, string> = {
-				"chat:announcement.release.heading": "What is new in Zoo Code v3.88.0",
+				"chat:announcement.release.heading": "What is new in Ashnova Code v3.88.0",
 				"chat:announcement.release.highlight1":
 					"✨ Provider and model support: Use Grok Build and improved custom-model support. This release also fixes Bedrock model limits and sends the Codex verbosity setting.",
 				"chat:announcement.release.highlight2":
@@ -42,7 +42,7 @@ vi.mock("@src/i18n/TranslationContext", () => ({
 			}
 
 			if (key === "chat:announcement.title") {
-				return `Zoo Code ${options?.version ?? ""} Released`
+				return `Ashnova Code ${options?.version ?? ""} Released`
 			}
 
 			return translations[key] ?? key
@@ -54,8 +54,8 @@ describe("Announcement", () => {
 	it("renders the announcement title and highlights", () => {
 		render(<Announcement hideAnnouncement={vi.fn()} />)
 
-		expect(screen.getByText("Zoo Code 3.88.0 Released")).toBeInTheDocument()
-		expect(screen.getByText("What is new in Zoo Code v3.88.0")).toBeInTheDocument()
+		expect(screen.getByText("Ashnova Code 3.88.0 Released")).toBeInTheDocument()
+		expect(screen.getByText("What is new in Ashnova Code v3.88.0")).toBeInTheDocument()
 		expect(
 			screen.getByText(
 				"✨ Provider and model support: Use Grok Build and improved custom-model support. This release also fixes Bedrock model limits and sends the Codex verbosity setting.",
@@ -79,7 +79,7 @@ describe("Announcement", () => {
 		expect(screen.getAllByRole("listitem")).toHaveLength(3)
 	})
 
-	it("links support users to the Zoo Code GitHub repository", () => {
+	it("links support users to the Ashnova Code GitHub repository", () => {
 		render(<Announcement hideAnnouncement={vi.fn()} />)
 
 		expect(screen.getByRole("link", { name: "GitHub" })).toHaveAttribute("href", EXTERNAL_LINKS.GITHUB_REPO)

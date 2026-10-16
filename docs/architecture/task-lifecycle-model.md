@@ -1,6 +1,6 @@
 # Task lifecycle model-check suite
 
-Zoo Code checks task lifecycle protocols through one umbrella command for independent bounded checks. Run the complete suite locally with:
+Ashnova Code checks task lifecycle protocols through one umbrella command for independent bounded checks. Run the complete suite locally with:
 
 ```sh
 pnpm lifecycle:model-check

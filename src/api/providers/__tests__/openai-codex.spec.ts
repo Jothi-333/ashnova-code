@@ -878,7 +878,7 @@ describe("OpenAiCodexHandler Responses Lite requests", () => {
 		expect(body).not.toHaveProperty("tools")
 		expect(body).not.toHaveProperty("instructions")
 		expect(options.headers).toMatchObject({
-			originator: "zoo-code",
+			originator: "ashnova-code",
 			session_id: "task-astra",
 			"session-id": "task-astra",
 			"x-openai-internal-codex-responses-lite": "true",
@@ -935,7 +935,7 @@ describe("OpenAiCodexHandler Responses Lite requests", () => {
 			content: [{ type: "input_text", text: "Hello" }],
 		})
 		expect(options.headers).toMatchObject({
-			originator: "zoo-code",
+			originator: "ashnova-code",
 			session_id: "task-luna",
 			"session-id": "task-luna",
 			"x-session-affinity": "task-luna",

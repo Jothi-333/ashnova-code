@@ -203,7 +203,7 @@ async function runWorkflow(options: HarnessOptions = {}) {
 	const pr = buildHarnessPr(options)
 	const requiredContexts = options.requiredContexts ?? ["tests"]
 	const requiredRuns = (options.omitRequiredRuns ? [] : requiredContexts)
-		.filter((name) => name !== "Zoo Code / reconcile PR review state")
+		.filter((name) => name !== "Ashnova Code / reconcile PR review state")
 		.map((name, index) => ({
 			id: index + 1,
 			name,
@@ -1617,7 +1617,7 @@ describe("PR review-state workflow", () => {
 		const result = await runWorkflow()
 
 		expect(latestGateStatus(result)).toEqual(
-			expect.objectContaining({ context: "Zoo Code / PR review gate", sha: SHA, state: "pending" }),
+			expect.objectContaining({ context: "Ashnova Code / PR review gate", sha: SHA, state: "pending" }),
 		)
 	})
 
@@ -1625,7 +1625,7 @@ describe("PR review-state workflow", () => {
 		const result = await runWorkflow({
 			gateStatuses: [
 				{
-					context: "Zoo Code / PR review gate",
+					context: "Ashnova Code / PR review gate",
 					state: "pending",
 					description: "Required CI passed. Waiting for automated review of the latest commit.",
 					targetUrl: "https://github.com/Zoo-Code-Org/Zoo-Code/pull/1437",
@@ -1642,7 +1642,7 @@ describe("PR review-state workflow", () => {
 
 		expect(result.setFailed).not.toHaveBeenCalled()
 		expect(result.warning).toHaveBeenCalledWith(
-			expect.stringContaining("could not publish Zoo Code / PR review gate"),
+			expect.stringContaining("could not publish Ashnova Code / PR review gate"),
 		)
 		expect(result.addLabels).toHaveBeenCalledWith(expect.objectContaining({ labels: ["coderabbit-review-active"] }))
 		expect(latestGuide(result)).toContain(`coderabbit-review-label:${SHA}`)
@@ -1653,7 +1653,7 @@ describe("PR review-state workflow", () => {
 			createCommitStatusErrorStatus: 500,
 			gateStatuses: [
 				{
-					context: "Zoo Code / PR review gate",
+					context: "Ashnova Code / PR review gate",
 					state: "success",
 					description: "Approved",
 					targetUrl: "https://github.com/Zoo-Code-Org/Zoo-Code/pull/1437",
@@ -1662,7 +1662,7 @@ describe("PR review-state workflow", () => {
 		})
 
 		expect(result.setFailed).toHaveBeenCalledWith(
-			expect.stringContaining("could not invalidate Zoo Code / PR review gate"),
+			expect.stringContaining("could not invalidate Ashnova Code / PR review gate"),
 		)
 	})
 
@@ -1692,7 +1692,7 @@ describe("PR review-state workflow", () => {
 
 		expect(result.setFailed).not.toHaveBeenCalled()
 		expect(result.warning).toHaveBeenCalledWith(
-			expect.stringContaining("could not inspect Zoo Code / PR review gate"),
+			expect.stringContaining("could not inspect Ashnova Code / PR review gate"),
 		)
 		expect(latestGateStatus(result)?.state).toBe("pending")
 		expect(result.addLabels).toHaveBeenCalledWith(expect.objectContaining({ labels: ["coderabbit-review-active"] }))
@@ -1713,7 +1713,7 @@ describe("PR review-state workflow", () => {
 
 		expect(result.setFailed).not.toHaveBeenCalled()
 		expect(result.warning).toHaveBeenCalledWith(
-			expect.stringContaining("could not inspect Zoo Code / PR review gate"),
+			expect.stringContaining("could not inspect Ashnova Code / PR review gate"),
 		)
 		expect(result.createCommitStatus).not.toHaveBeenCalledWith(expect.objectContaining({ state: "success" }))
 		expect(result.addLabels).toHaveBeenCalledWith(expect.objectContaining({ labels: ["awaiting-maintainer"] }))
@@ -1748,7 +1748,7 @@ describe("PR review-state workflow", () => {
 			labels: ["awaiting-maintainer", "coderabbit-review-active"],
 			gateStatuses: [
 				{
-					context: "Zoo Code / PR review gate",
+					context: "Ashnova Code / PR review gate",
 					state: "success",
 					description: "Approved",
 					targetUrl: "https://github.com/Zoo-Code-Org/Zoo-Code/pull/1437",
@@ -1779,7 +1779,7 @@ describe("PR review-state workflow", () => {
 
 	it("fails closed when repository rules require the advisory reconciliation job", async () => {
 		const result = await runWorkflow({
-			requiredContexts: ["tests", "Zoo Code / reconcile PR review state"],
+			requiredContexts: ["tests", "Ashnova Code / reconcile PR review state"],
 		})
 
 		expect(result.addLabels).not.toHaveBeenCalledWith(
@@ -1791,7 +1791,7 @@ describe("PR review-state workflow", () => {
 
 	it("fails closed for a self-referential reconciliation rule from any integration", async () => {
 		const result = await runWorkflow({
-			requiredContexts: ["Zoo Code / reconcile PR review state"],
+			requiredContexts: ["Ashnova Code / reconcile PR review state"],
 			requiredIntegrationId: 999,
 			omitRequiredRuns: true,
 		})
@@ -1805,10 +1805,10 @@ describe("PR review-state workflow", () => {
 
 	it("treats a matrix-suffixed reconcile check requirement as a self-referential configuration error", async () => {
 		// The fan-out matrix reports one check per shard named
-		// "Zoo Code / reconcile PR review state (<pr_number>"; a ruleset requiring
+		// "Ashnova Code / reconcile PR review state (<pr_number>"; a ruleset requiring
 		// that per-shard name is just as self-referential as the bare job name.
 		const result = await runWorkflow({
-			requiredContexts: ["Zoo Code / reconcile PR review state (1437)"],
+			requiredContexts: ["Ashnova Code / reconcile PR review state (1437)"],
 			labels: ["coderabbit-review-active"],
 		})
 
@@ -1822,7 +1822,7 @@ describe("PR review-state workflow", () => {
 
 	it("fails closed when repository rules require the advisory review gate", async () => {
 		const result = await runWorkflow({
-			requiredContexts: ["Zoo Code / PR review gate"],
+			requiredContexts: ["Ashnova Code / PR review gate"],
 		})
 
 		expect(result.addLabels).not.toHaveBeenCalledWith(
@@ -1836,7 +1836,7 @@ describe("PR review-state workflow", () => {
 		const result = await runWorkflow({
 			conflict: true,
 			labels: ["coderabbit-review-active", "awaiting-maintainer"],
-			requiredContexts: ["Zoo Code / PR review gate"],
+			requiredContexts: ["Ashnova Code / PR review gate"],
 		})
 
 		expect(result.warning).toHaveBeenCalledWith(expect.stringContaining("self-referential required check"))
@@ -1848,7 +1848,7 @@ describe("PR review-state workflow", () => {
 
 	it("preserves configuration-error when review-guide lookup fails", async () => {
 		const result = await runWorkflow({
-			requiredContexts: ["Zoo Code / PR review gate"],
+			requiredContexts: ["Ashnova Code / PR review gate"],
 			listCommentsErrorStatus: 500,
 		})
 
@@ -1861,7 +1861,7 @@ describe("PR review-state workflow", () => {
 
 	it("preserves configuration-error when metadata cleanup fails", async () => {
 		const result = await runWorkflow({
-			requiredContexts: ["Zoo Code / PR review gate"],
+			requiredContexts: ["Ashnova Code / PR review gate"],
 			labels: ["coderabbit-review-active", "awaiting-maintainer"],
 			removeLabelStatus: 500,
 		})
@@ -3038,7 +3038,7 @@ describe("PR review-state workflow", () => {
 			})
 
 			for (const [status] of result.createCommitStatus.mock.calls) {
-				expect(status.context).toBe("Zoo Code / PR review gate")
+				expect(status.context).toBe("Ashnova Code / PR review gate")
 			}
 			expect(latestGateStatus(result)?.state).toBe("success")
 			expect(latestGateStatus(result)?.description).toContain("Awaiting fresh human maintainer")
@@ -3057,7 +3057,7 @@ describe("PR review-state workflow", () => {
 		})
 
 		it.each([
-			{ name: "a configuration error", options: { requiredContexts: ["Zoo Code / PR review gate"] } },
+			{ name: "a configuration error", options: { requiredContexts: ["Ashnova Code / PR review gate"] } },
 			{ name: "a merge conflict", options: { conflict: true } },
 			{ name: "pending required CI", options: { requiredStatus: "in_progress" as const } },
 			{ name: "failing required CI", options: { requiredConclusion: "failure" as const } },

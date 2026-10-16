@@ -291,7 +291,7 @@ describe("convertToVsCodeLmMessages", () => {
 		consoleWarnSpy.mockRestore()
 	})
 
-	it("should log Zoo Code branded warning when asObjectSafe fails to parse invalid JSON string", () => {
+	it("should log Ashnova Code branded warning when asObjectSafe fails to parse invalid JSON string", () => {
 		const consoleWarnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
 		const messages: Anthropic.Messages.MessageParam[] = [
@@ -312,7 +312,7 @@ describe("convertToVsCodeLmMessages", () => {
 
 		expect(result).toHaveLength(1)
 		expect(consoleWarnSpy).toHaveBeenCalledWith(
-			"Zoo Code <Language Model API>: Failed to parse object:",
+			"Ashnova Code <Language Model API>: Failed to parse object:",
 			expect.any(Error),
 		)
 
@@ -691,7 +691,7 @@ describe("extractTextCountFromMessage", () => {
 		expect(result).toBe("result-id")
 	})
 
-	it("should log Zoo Code branded warning when tool call input stringify fails", () => {
+	it("should log Ashnova Code branded warning when tool call input stringify fails", () => {
 		const consoleErrorSpy = vi.spyOn(console, "error").mockImplementation(() => {})
 
 		// Create an object with a circular reference that will throw on JSON.stringify
@@ -714,7 +714,7 @@ describe("extractTextCountFromMessage", () => {
 		// Should still return the tool name and callId even when input stringify fails
 		expect(result).toBe("broken-toolcall-id")
 		expect(consoleErrorSpy).toHaveBeenCalledWith(
-			"Zoo Code <Language Model API>: Failed to stringify tool call input:",
+			"Ashnova Code <Language Model API>: Failed to stringify tool call input:",
 			expect.any(Error),
 		)
 

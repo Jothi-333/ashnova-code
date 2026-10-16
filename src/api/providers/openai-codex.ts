@@ -1360,9 +1360,9 @@ export class OpenAiCodexHandler extends BaseProvider implements SingleCompletion
 	): Record<string, string> {
 		const usesResponsesLite = RESPONSES_LITE_MODEL_IDS.has(model.id)
 		return {
-			originator: "zoo-code",
+			originator: "ashnova-code",
 			session_id: effectiveSessionId,
-			"User-Agent": `zoo-code/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`,
+			"User-Agent": `ashnova-code/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`,
 			...(accountId ? { "ChatGPT-Account-Id": accountId } : {}),
 			...(usesResponsesLite
 				? {

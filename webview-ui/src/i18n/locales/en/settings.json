@@ -42,7 +42,7 @@
 		"ui": "UI",
 		"experimental": "Experimental",
 		"language": "Language",
-		"about": "About Zoo Code"
+		"about": "About Ashnova Code"
 	},
 	"about": {
 		"bugReport": {
@@ -57,7 +57,7 @@
 			"label": "Discovered a vulnerability?",
 			"link": "Follow our disclosure process"
 		},
-		"community": "Want tips or to just hang out with other Zoo Code users? Join <redditLink>reddit.com/r/ZooCode</redditLink> or <discordLink>discord.gg/VxfP4Vx3gX</discordLink>",
+		"community": "Want tips or to just hang out with other Ashnova Code users? Join <redditLink>reddit.com/r/ZooCode</redditLink> or <discordLink>discord.gg/VxfP4Vx3gX</discordLink>",
 		"contactAndCommunity": "Contact & Community",
 		"manageSettings": "Manage Settings",
 		"debugMode": {
@@ -67,7 +67,7 @@
 		"rooHistoryImport": {
 			"settingLabel": "Import history from Roo Code",
 			"cardTitle": "Roo Code history",
-			"cardDescription": "Copy saved Roo Code conversations into Zoo Code.",
+			"cardDescription": "Copy saved Roo Code conversations into Ashnova Code.",
 			"statusImporting": "Importing history",
 			"statusFailed": "Import failed",
 			"statusComplete": "Import complete",
@@ -119,7 +119,7 @@
 		"footer": "Use slash commands for quick access to frequently used prompts and workflows."
 	},
 	"rules": {
-		"description": "Manage Zoo Code rule files from global and workspace .roo/rules directories. Create general rules or mode-specific rules without manually browsing configuration folders.",
+		"description": "Manage Ashnova Code rule files from global and workspace .roo/rules directories. Create general rules or mode-specific rules without manually browsing configuration folders.",
 		"workspaceRules": "Workspace Rules",
 		"globalRules": "Global Rules",
 		"noWorkspaceRules": "No rules in this project yet.",
@@ -228,7 +228,7 @@
 		},
 		"chatFontSize": {
 			"label": "Chat font size",
-			"description": "Set the font size (in pixels) for the Zoo Code chat. Leave at the default to match VS Code's font size.",
+			"description": "Set the font size (in pixels) for the Ashnova Code chat. Leave at the default to match VS Code's font size.",
 			"reset": "Use VS Code default"
 		},
 		"autoCloseZooOpenedFiles": {
@@ -480,7 +480,7 @@
 		"awsCustomArnDesc": "Make sure the region in the ARN matches your selected AWS Region above.",
 		"awsCustomArnBaseModel": "Underlying model",
 		"awsCustomArnBaseModelOther": "Other (not listed)",
-		"awsCustomArnBaseModelDesc": "The model this ARN points to. Zoo Code uses it for thinking, temperature, context window, max output and pricing. Detected automatically when the ARN names its model.",
+		"awsCustomArnBaseModelDesc": "The model this ARN points to. Ashnova Code uses it for thinking, temperature, context window, max output and pricing. Detected automatically when the ARN names its model.",
 		"awsCustomArnContextWindow": "Context window (tokens)",
 		"awsCustomArnMaxTokens": "Max output tokens",
 		"openRouterApiKey": "OpenRouter API Key",
@@ -550,7 +550,7 @@
 		"headerValue": "Header value",
 		"noCustomHeaders": "No custom headers defined. Click the + button to add one.",
 		"extraBody": "Extra Body",
-		"extraBodyDescription": "Optional JSON object merged into API request bodies. Zoo Code-managed fields such as model, messages, tools, and stream cannot be overridden. Do not include secrets.",
+		"extraBodyDescription": "Optional JSON object merged into API request bodies. Ashnova Code-managed fields such as model, messages, tools, and stream cannot be overridden. Do not include secrets.",
 		"unboundApiKey": "Unbound API Key",
 		"getUnboundApiKey": "Get Unbound API Key",
 		"requestyApiKey": "Requesty API Key",
@@ -690,7 +690,7 @@
 			"draftModelDesc": "Draft model must be from the same model family for speculative decoding to work correctly.",
 			"selectDraftModel": "Select Draft Model",
 			"noModelsFound": "No draft models found. Please ensure LM Studio is running with Server Mode enabled.",
-			"description": "LM Studio allows you to run models locally on your computer. For instructions on how to get started, see their <a>quickstart guide</a>. You will also need to start LM Studio's <b>local server</b> feature to use it with this extension. <span>Note:</span> Zoo Code uses complex prompts and works best with Claude models. Less capable models may not work as expected."
+			"description": "LM Studio allows you to run models locally on your computer. For instructions on how to get started, see their <a>quickstart guide</a>. You will also need to start LM Studio's <b>local server</b> feature to use it with this extension. <span>Note:</span> Ashnova Code uses complex prompts and works best with Claude models. Less capable models may not work as expected."
 		},
 		"ollama": {
 			"baseUrl": "Base URL (optional)",
@@ -702,7 +702,7 @@
 			"thinking": "Enable Thinking",
 			"thinkingHelp": "Enable Ollama's native thinking for reasoning models (e.g. qwen3, deepseek-r1). When enabled, the model's reasoning is streamed and displayed separately. Unsupported models will ignore this setting.",
 			"description": "Ollama allows you to run models locally on your computer. For instructions on how to get started, see their quickstart guide.",
-			"warning": "Note: Zoo Code uses complex prompts and works best with Claude models. Less capable models may not work as expected."
+			"warning": "Note: Ashnova Code uses complex prompts and works best with Claude models. Less capable models may not work as expected."
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -712,14 +712,14 @@
 			}
 		},
 		"zooGateway": {
-			"account": "Zoo Code Account",
-			"signInButton": "Sign in to Zoo Code",
+			"account": "Ashnova Code Account",
+			"signInButton": "Sign in to Ashnova Code",
 			"signInDescription": "Sign in to use Zoo Gateway with your account",
 			"authenticated": "Authenticated",
 			"authenticatedAs": "Authenticated as {{name}}"
 		},
 		"customModel": {
-			"capabilities": "Configure the capabilities and pricing for your custom OpenAI-compatible model. Be careful when specifying the model capabilities, as they can affect how Zoo Code performs.",
+			"capabilities": "Configure the capabilities and pricing for your custom OpenAI-compatible model. Be careful when specifying the model capabilities, as they can affect how Ashnova Code performs.",
 			"maxTokens": {
 				"label": "Max Output Tokens",
 				"description": "Maximum number of tokens the model can generate in a response. (Specify -1 to allow the server to set the max tokens.)"
@@ -987,11 +987,11 @@
 			"description": "Turn this on to inherit environment variables from the parent VS Code process. <0>Learn more</0>"
 		},
 		"profile": {
-			"label": "Shell for Zoo Code",
+			"label": "Shell for Ashnova Code",
 			"followVscode": "Follow VS Code profile (recommended)",
 			"configureButton": "Choose default profile in VS Code",
 			"noProfiles": "(no path-based profiles found in terminal.integrated.profiles)",
-			"description": "Zoo Code uses the shell configured in VS Code by default. Select a specific terminal profile to override this. Only path-based profiles from terminal.integrated.profiles are listed here. <0>Learn more</0>"
+			"description": "Ashnova Code uses the shell configured in VS Code by default. Select a specific terminal profile to override this. Only path-based profiles from terminal.integrated.profiles are listed here. <0>Learn more</0>"
 		}
 	},
 	"advancedSettings": {
@@ -1095,7 +1095,7 @@
 		"imageSupportUnknown": "Image support not reported",
 		"toolSupportUnknown": "Tool support not reported",
 		"promptCacheManagedByCopilot": "Prompt caching managed by GitHub Copilot",
-		"promptCacheCopilotDetails": "Caching depends on the model and GitHub Copilot backend. Zoo Code cannot configure cache retention or observe cache hits through the VS Code API.",
+		"promptCacheCopilotDetails": "Caching depends on the model and GitHub Copilot backend. Ashnova Code cannot configure cache retention or observe cache hits through the VS Code API.",
 		"supportsImages": "Supports images",
 		"noImages": "Does not support images",
 		"supportsTools": "Supports tools",
@@ -1120,7 +1120,7 @@
 		}
 	},
 	"modelPicker": {
-		"automaticFetch": "The extension automatically fetches the latest list of models available on <serviceLink>{{serviceName}}</serviceLink>. If you're unsure which model to choose, Zoo Code works best with <defaultModelLink>{{defaultModelId}}</defaultModelLink>. You can also try searching \"free\" for no-cost options currently available.",
+		"automaticFetch": "The extension automatically fetches the latest list of models available on <serviceLink>{{serviceName}}</serviceLink>. If you're unsure which model to choose, Ashnova Code works best with <defaultModelLink>{{defaultModelId}}</defaultModelLink>. You can also try searching \"free\" for no-cost options currently available.",
 		"label": "Model",
 		"searchPlaceholder": "Search",
 		"noMatchFound": "No match found",
@@ -1130,7 +1130,7 @@
 	"footer": {
 		"telemetry": {
 			"label": "Allow error and usage reporting",
-			"description": "Help improve Zoo Code by sending usage data and error reports, linked to a per-install identifier rather than your name or account. This telemetry does not collect your code or prompts. See our <privacyLink>privacy policy</privacyLink> for more details."
+			"description": "Help improve Ashnova Code by sending usage data and error reports, linked to a per-install identifier rather than your name or account. This telemetry does not collect your code or prompts. See our <privacyLink>privacy policy</privacyLink> for more details."
 		},
 		"settings": {
 			"import": "Import",
@@ -1152,7 +1152,7 @@
 		"openAiExtraBody": {
 			"invalidJson": "Extra Body must contain valid JSON.",
 			"objectRequired": "Extra Body must be a JSON object.",
-			"reservedKeys": "Extra Body cannot override Zoo Code-managed fields: {{keys}}."
+			"reservedKeys": "Extra Body cannot override Ashnova Code-managed fields: {{keys}}."
 		},
 		"arn": {
 			"invalidFormat": "Invalid ARN format. Please check the format requirements.",
@@ -1164,7 +1164,7 @@
 		"modelNotAllowed": "Model '{{model}}' is not allowed for provider '{{provider}}' by your organization",
 		"profileInvalid": "This profile contains a provider or model that is not allowed by your organization",
 		"qwenCodeOauthPath": "You must provide a valid OAuth credentials path.",
-		"zooGatewaySignIn": "Sign in to Zoo Code to use Zoo Gateway."
+		"zooGatewaySignIn": "Sign in to Ashnova Code to use Zoo Gateway."
 	},
 	"placeholders": {
 		"apiKey": "Enter API Key...",

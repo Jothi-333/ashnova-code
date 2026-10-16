@@ -23,7 +23,7 @@ const result = spawnSync(
 		"test:coverage:misc",
 		"test:coverage:tree-sitter",
 		"test:dist",
-		"--filter=zoo-code",
+		"--filter=ashnova-code",
 		"--dry=json",
 	],
 	{ encoding: "utf8" },

@@ -1,5 +1,5 @@
 /**
- * Locale environment handling for commands spawned by Zoo Code.
+ * Locale environment handling for commands spawned by Ashnova Code.
  *
  * Commands used to be spawned with a hardcoded `LANG`/`LC_ALL` of `en_US.UTF-8` so that
  * tools such as Ruby and CocoaPods always emit UTF-8. Overriding the locale

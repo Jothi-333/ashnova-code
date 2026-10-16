@@ -1,5 +1,5 @@
 {
-	"greeting": "Welcome to Zoo Code!",
+	"greeting": "Welcome to Ashnova Code!",
 	"task": {
 		"title": "Task",
 		"expand": "Expand task",
@@ -185,7 +185,7 @@
 			"docs": "Docs",
 			"goToSettings": "Settings",
 			"connection": "Connection error. Make sure you have a working internet connection.",
-			"unknown": "Unknown API error. Please contact Zoo Code support.",
+			"unknown": "Unknown API error. Please contact Ashnova Code support.",
 			"claudeCodeNotAuthenticated": "You need to sign in to use Claude Code. Go to Settings and click \"Sign in to Claude Code\" to authenticate."
 		}
 	},
@@ -359,10 +359,10 @@
 		"triggerLabelAll": "BRRR"
 	},
 	"announcement": {
-		"title": "Zoo Code {{version}} Released",
-		"support": "Please support Zoo Code by starring us on <githubLink>GitHub</githubLink>.",
+		"title": "Ashnova Code {{version}} Released",
+		"support": "Please support Ashnova Code by starring us on <githubLink>GitHub</githubLink>.",
 		"release": {
-			"heading": "What is new in Zoo Code v3.88.0",
+			"heading": "What is new in Ashnova Code v3.88.0",
 			"highlight1": "✨ Provider and model support: Use Grok Build and improved custom-model support. This release also fixes Bedrock model limits and sends the Codex verbosity setting.",
 			"highlight2": "🧭 Task reliability: This release fixes cancellation handling, tool-turn continuation, and task-message saving.",
 			"highlight3": "⚡ Faster editing and chat: File writes no longer use artificial delays by default. Chat messages carry less file data, and code actions reach the last active chat."
@@ -397,7 +397,7 @@
 	"profileViolationWarning": "The current profile isn't compatible with your organization's settings",
 	"shellIntegration": {
 		"title": "Command Execution Warning",
-		"description": "Your command is being executed without VSCode terminal shell integration. To suppress this warning you can disable shell integration in the <strong>Terminal</strong> section of the <settingsLink>Zoo Code settings</settingsLink> or troubleshoot VSCode terminal integration using the link below.",
+		"description": "Your command is being executed without VSCode terminal shell integration. To suppress this warning you can disable shell integration in the <strong>Terminal</strong> section of the <settingsLink>Ashnova Code settings</settingsLink> or troubleshoot VSCode terminal integration using the link below.",
 		"troubleshooting": "Click here for shell integration documentation."
 	},
 	"ask": {

@@ -147,7 +147,7 @@ interface ZooGatewayUsage extends OpenAI.CompletionUsage {
 	cost?: number
 }
 
-const ZOO_GATEWAY_AUTH_ERROR = "Zoo Gateway requires authentication. Please sign in to Zoo Code first."
+const ZOO_GATEWAY_AUTH_ERROR = "Zoo Gateway requires authentication. Please sign in to Ashnova Code first."
 
 export class ZooGatewayHandler extends RouterProvider implements SingleCompletionHandler {
 	constructor(options: ApiHandlerOptions) {

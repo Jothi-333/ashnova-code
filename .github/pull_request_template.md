@@ -1,5 +1,5 @@
 <!--
-Thank you for contributing to Zoo Code!
+Thank you for contributing to Ashnova Code!
 
 Before you submit your PR, make sure of these points:
 - It links to an approved GitHub Issue.

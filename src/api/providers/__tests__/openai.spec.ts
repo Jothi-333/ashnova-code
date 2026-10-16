@@ -128,7 +128,7 @@ describe("OpenAiHandler", () => {
 				apiKey: expect.any(String),
 				defaultHeaders: {
 					"HTTP-Referer": "https://github.com/Zoo-Code-Org/Zoo-Code",
-					"X-Title": "Zoo Code",
+					"X-Title": "Ashnova Code",
 					"User-Agent": `ZooCode/${Package.version}`,
 				},
 				timeout: MOCK_TIMEOUT_MS,

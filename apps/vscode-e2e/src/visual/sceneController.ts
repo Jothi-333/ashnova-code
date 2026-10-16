@@ -64,12 +64,12 @@ export async function run(): Promise<void> {
 	if (scene !== "welcome" && scene !== "chat") throw new Error(`Unknown Electron visual scene: ${scene}`)
 	if (!themeKinds[themeId]) throw new Error(`Unsupported Electron visual theme: ${themeId}`)
 
-	const extension = vscode.extensions.getExtension<RooCodeTestAPI>("ZooCodeOrganization.zoo-code")
-	if (!extension) throw new Error("Zoo Code extension not found")
+	const extension = vscode.extensions.getExtension<RooCodeTestAPI>("ashnova.ashnova-code")
+	if (!extension) throw new Error("Ashnova Code extension not found")
 	const api = extension.isActive ? extension.exports : await extension.activate()
 
-	await vscode.commands.executeCommand("zoo-code.SidebarProvider.focus")
-	await poll(async () => api.isReady(), Boolean, "Zoo Code webview activation")
+	await vscode.commands.executeCommand("ashnova-code.SidebarProvider.focus")
+	await poll(async () => api.isReady(), Boolean, "Ashnova Code webview activation")
 	await log("webview-ready")
 	await vscode.workspace
 		.getConfiguration("workbench")
@@ -83,11 +83,11 @@ export async function run(): Promise<void> {
 	const themeFixture = await poll<WebviewThemeFixture>(
 		() => api.captureWebviewThemeFixture(),
 		(fixture) => fixture.themeId === themeId,
-		`${themeId} Zoo Code webview theme`,
+		`${themeId} Ashnova Code webview theme`,
 	)
 	await log(`theme-ready=${themeFixture.themeId}`)
 
-	let landmark = "Welcome to Zoo Code!"
+	let landmark = "Welcome to Ashnova Code!"
 	if (scene === "chat") {
 		if (!aimockUrl) throw new Error("AIMOCK_URL is required for the populated chat scene")
 		const prompt = process.env.ROO_CODE_VISUAL_CHAT_PROMPT

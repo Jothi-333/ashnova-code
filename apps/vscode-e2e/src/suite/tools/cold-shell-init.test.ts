@@ -14,7 +14,7 @@
  * has known reliability issues on "basic" shell integration (documented in
  * https://github.com/microsoft/vscode/issues/242897). On a cold zsh terminal
  * the very first command may produce zero stream chunks even though the
- * command ran successfully — this is a VSCode API limitation, not a Zoo Code
+ * command ran successfully — this is a VSCode API limitation, not a Ashnova Code
  * bug. The model typically retries and captures output on the second attempt
  * (warm terminal). This test verifies the guard prevents a PREMATURE
  * self-finalize and that the model eventually receives "cold-init-ok" output

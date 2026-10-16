@@ -17,7 +17,7 @@ This document is the design target. It does not restate the gap report, the reme
 
 ## Context and scope
 
-Zoo Code runs agent tasks inside a VS Code extension. A task can delegate to a child task. The extension host owns task state. A webview renders the task to the user.
+Ashnova Code runs agent tasks inside a VS Code extension. A task can delegate to a child task. The extension host owns task state. A webview renders the task to the user.
 
 Two classes carry most task state today. `src/core/task/Task.ts` is about 5,400 lines. `src/core/webview/ClineProvider.ts` is about 4,600 lines. Task run state is a set of separate boolean flags. Some tool state is process-global. This shape allows illegal flag combinations and interleaving races between await points. Issue #325 is one observed flag-combination defect.
 

@@ -36,7 +36,7 @@
 		"invalidImageFormat": "Geçersiz görüntü formatı alındı",
 		"unknownError": "Bilinmeyen bir hata oluştu",
 		"roo": {
-			"authRequired": "Görüntü oluşturma için Zoo Code Cloud kimlik doğrulaması gereklidir. Lütfen Zoo Code Cloud'da oturum açın."
+			"authRequired": "Görüntü oluşturma için Ashnova Code Cloud kimlik doğrulaması gereklidir. Lütfen Ashnova Code Cloud'da oturum açın."
 		}
 	}
 }

@@ -1,5 +1,5 @@
 <p align="center">
-          <a href="https://marketplace.visualstudio.com/items?itemName=ZooCodeOrganization.zoo-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ashnova.ashnova-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
           <a href="https://x.com/ZooCodeDev"><img src="https://img.shields.io/badge/ZooCode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
           <a href="https://discord.gg/VxfP4Vx3gX"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
           <a href="https://www.reddit.com/r/ZooCode/"><img src="https://img.shields.io/badge/Join%20r%2FZooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/ZooCode"></a>
@@ -9,13 +9,13 @@
           <em>Obtén ayuda rápido → <a href="https://discord.gg/VxfP4Vx3gX">Únete a Discord</a> • ¿Prefieres algo asíncrono? → <a href="https://www.reddit.com/r/ZooCode/">Únete a r/ZooCode</a></em>
         </p>
 
-        # Zoo Code
+        # Ashnova Code
 
         > Tu equipo de desarrollo con IA, directamente en tu editor
 
-        ## Somos Zoo Code
+        ## Somos Ashnova Code
 
-> Zoo Code continúa el desarrollo de este proyecto después de que el equipo
+> Ashnova Code continúa el desarrollo de este proyecto después de que el equipo
 > de Roo detuviera el desarrollo activo de Roo Code para centrarse en
 > [Roomote](https://roomote.dev/). Gracias al equipo de Roo por todo lo que
 > construyeron.
@@ -29,15 +29,15 @@
 > [Reddit](https://www.reddit.com/r/ZooCode), o
 > [abre un PR o issue](https://github.com/Zoo-Code-Org/Zoo-Code).
 >
-> _-Zoo Code Team_
+> _-Ashnova Code Team_
 
-## Migración de Roo Code a Zoo Code
+## Migración de Roo Code a Ashnova Code
 
-Puedes encontrar una guía rápida para pasar de Roo Code a Zoo Code en la [guía de migración Roo→Zoo](https://docs.zoocode.dev/roo-to-zoo-migration). Queremos ayudar a los usuarios durante la transición, y para eso tenemos nuestro [Reddit](https://www.reddit.com/r/ZooCode) y [Discord](https://discord.gg/VxfP4Vx3gX). Si tienes problemas o alguna pregunta, entra y pregúntanos.
+Puedes encontrar una guía rápida para pasar de Roo Code a Ashnova Code en la [guía de migración Roo→Zoo](https://docs.zoocode.dev/roo-to-zoo-migration). Queremos ayudar a los usuarios durante la transición, y para eso tenemos nuestro [Reddit](https://www.reddit.com/r/ZooCode) y [Discord](https://discord.gg/VxfP4Vx3gX). Si tienes problemas o alguna pregunta, entra y pregúntanos.
 
-## Lo que Zoo Code ha añadido desde Roo Code
+## Lo que Ashnova Code ha añadido desde Roo Code
 
-Zoo Code parte de los cimientos creados por Roo Code y continúa ampliándolos con:
+Ashnova Code parte de los cimientos creados por Roo Code y continúa ampliándolos con:
 
 - **Inteligencia de código base con Semble** — búsqueda semántica de código rápida y bajo demanda, con configuración automática y sin un flujo de indexación independiente.
 - **Flujos de Orchestrator más sólidos** — delegación más segura, coordinación de tareas en paralelo, recuperación fiable de tareas principales y secundarias, y mejor aislamiento entre subtareas y perfiles de proveedor.
@@ -53,7 +53,7 @@ Zoo Code parte de los cimientos creados por Roo Code y continúa ampliándolos c
 - 🧭 **Confiabilidad de las tareas:** Esta versión corrige el manejo de cancelaciones, la continuación de turnos de herramientas y el guardado de mensajes de tarea.
 - ⚡ **Edición y chat más rápidos:** Las escrituras de archivos ya no usan retrasos artificiales por defecto. Los mensajes del chat llevan menos datos de archivos, y las acciones de código llegan al último chat activo.
 
-## ¿Qué puede hacer Zoo Code por TI?
+## ¿Qué puede hacer Ashnova Code por TI?
 
 - Generar código a partir de descripciones en lenguaje natural
 - Adaptarse con Modos: Código, Arquitecto, Pregunta, Depuración y Modos Personalizados
@@ -65,7 +65,7 @@ Zoo Code parte de los cimientos creados por Roo Code y continúa ampliándolos c
 
 ## Modos
 
-Zoo Code se adapta a tu forma de trabajar, no al revés:
+Ashnova Code se adapta a tu forma de trabajar, no al revés:
 
 - Modo Código: codificación diaria, ediciones y operaciones de archivos
 - Modo Arquitecto: planificar sistemas, especificaciones y migraciones
@@ -77,7 +77,7 @@ Más info: [Usar Modos](https://docs.zoocode.dev/basic-usage/using-modes) • [M
 
 ## Recursos
 
-- **[Documentación](https://docs.zoocode.dev):** La guía oficial para instalar, configurar y dominar Zoo Code.
+- **[Documentación](https://docs.zoocode.dev):** La guía oficial para instalar, configurar y dominar Ashnova Code.
 - **[Servidor de Discord](https://discord.gg/VxfP4Vx3gX):** Únete a la comunidad para obtener ayuda y discutir en tiempo real.
 - **[Comunidad de Reddit](https://www.reddit.com/r/ZooCode):** Comparte tus experiencias y ve lo que otros están construyendo.
 - **[Incidencias de GitHub](https://github.com/Zoo-Code-Org/Zoo-Code/issues):** Reporta errores y sigue el desarrollo.
@@ -101,13 +101,13 @@ pnpm install
 
 3. **Ejecuta la extensión**:
 
-Hay varias formas de ejecutar la extensión Zoo Code:
+Hay varias formas de ejecutar la extensión Ashnova Code:
 
 ### Modo de desarrollo (F5)
 
 Para el desarrollo activo, utiliza la depuración integrada de VSCode:
 
-Presiona `F5` (o ve a **Ejecutar** → **Iniciar depuración**) en VSCode. Esto abrirá una nueva ventana de VSCode con la extensión Zoo Code en ejecución.
+Presiona `F5` (o ve a **Ejecutar** → **Iniciar depuración**) en VSCode. Esto abrirá una nueva ventana de VSCode con la extensión Ashnova Code en ejecución.
 
 - Los cambios en la vista web aparecerán inmediatamente.
 - Los cambios en la extensión principal también se recargarán automáticamente.
@@ -155,7 +155,7 @@ Usamos [changesets](https://github.com/changesets/changesets) para el versionado
 
 ## Aviso legal
 
-**Ten en cuenta** que Zoo Code, Inc **no** hace ninguna representación o garantía con respecto a cualquier código, modelo u otras herramientas proporcionadas o puestas a disposición en relación con Zoo Code, cualquier herramienta de terceros asociada, o cualquier resultado. Asumes **todos los riesgos** asociados con el uso de dichas herramientas o resultados; tales herramientas se proporcionan "**TAL CUAL**" y "**SEGÚN DISPONIBILIDAD**". Dichos riesgos pueden incluir, sin limitación, infracciones de propiedad intelectual, vulnerabilidades o ataques cibernéticos, sesgo, imprecisiones, errores, defectos, virus, tiempo de inactividad, pérdida o daño de propiedad y/o lesiones personales. Eres el único responsable de tu uso de dichas herramientas o resultados (incluidas, entre otras, la legalidad, idoneidad y resultados de los mismos).
+**Ten en cuenta** que Ashnova Code, Inc **no** hace ninguna representación o garantía con respecto a cualquier código, modelo u otras herramientas proporcionadas o puestas a disposición en relación con Ashnova Code, cualquier herramienta de terceros asociada, o cualquier resultado. Asumes **todos los riesgos** asociados con el uso de dichas herramientas o resultados; tales herramientas se proporcionan "**TAL CUAL**" y "**SEGÚN DISPONIBILIDAD**". Dichos riesgos pueden incluir, sin limitación, infracciones de propiedad intelectual, vulnerabilidades o ataques cibernéticos, sesgo, imprecisiones, errores, defectos, virus, tiempo de inactividad, pérdida o daño de propiedad y/o lesiones personales. Eres el único responsable de tu uso de dichas herramientas o resultados (incluidas, entre otras, la legalidad, idoneidad y resultados de los mismos).
 
 ---
 
@@ -167,8 +167,8 @@ Usamos [changesets](https://github.com/changesets/changesets) para el versionado
 
 ## Licencia
 
-[Apache 2.0 © 2025 Zoo Code Org](../../LICENSE)
+[Apache 2.0 © 2025 Ashnova Code Org](../../LICENSE)
 
 ---
 
-**¡Disfruta Zoo Code!** Tanto si lo llevas con la correa corta como si lo dejas deambular de forma autónoma, estamos deseando ver lo que construyes. Si tienes preguntas o ideas de funciones, abre una [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) o inicia una [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions). ¡Feliz código!
+**¡Disfruta Ashnova Code!** Tanto si lo llevas con la correa corta como si lo dejas deambular de forma autónoma, estamos deseando ver lo que construyes. Si tienes preguntas o ideas de funciones, abre una [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) o inicia una [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions). ¡Feliz código!

@@ -181,7 +181,7 @@ describe("VsCodeLmHandler", () => {
 				expect(deferred["client"]).toBeNull()
 				await vi.waitFor(() =>
 					expect(console.debug).toHaveBeenCalledWith(
-						"Zoo Code <Language Model API>: Initial client setup failed; retrying on first use:",
+						"Ashnova Code <Language Model API>: Initial client setup failed; retrying on first use:",
 						expect.objectContaining({ message: expect.stringContaining("models not ready") }),
 					),
 				)
@@ -248,11 +248,11 @@ describe("VsCodeLmHandler", () => {
 			expect(mockLanguageModelChat.countTokens).not.toHaveBeenCalled()
 		})
 
-		it("should throw a Zoo Code branded error when selectChatModels fails", async () => {
+		it("should throw a Ashnova Code branded error when selectChatModels fails", async () => {
 			;(vscode.lm.selectChatModels as Mock).mockRejectedValueOnce(new Error("network down"))
 
 			await expect(handler["createClient"]({ vendor: "test" })).rejects.toThrow(
-				"Zoo Code <Language Model API>: Failed to select model: network down",
+				"Ashnova Code <Language Model API>: Failed to select model: network down",
 			)
 		})
 	})
@@ -781,7 +781,7 @@ describe("VsCodeLmHandler", () => {
 				})
 
 				await expect(stream.next()).rejects.toThrow(
-					new Error("Zoo Code <Language Model API>: Request cancelled by user"),
+					new Error("Ashnova Code <Language Model API>: Request cancelled by user"),
 				)
 				await expect(stream.next()).resolves.toEqual({ done: true, value: undefined })
 			})
@@ -2277,7 +2277,7 @@ describe("VsCodeLmHandler", () => {
 			await expect(handler.createMessage(systemPrompt, messages).next()).rejects.toThrow("API Error")
 		})
 
-		it("should brand the LM authorization justification as Zoo Code", async () => {
+		it("should brand the LM authorization justification as Ashnova Code", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [
 				{
@@ -2306,13 +2306,13 @@ describe("VsCodeLmHandler", () => {
 				expect.any(Array),
 				expect.objectContaining({
 					justification:
-						"Zoo Code would like to use 'Test Model' from 'test-vendor', Click 'Allow' to proceed.",
+						"Ashnova Code would like to use 'Test Model' from 'test-vendor', Click 'Allow' to proceed.",
 				}),
 				expect.anything(),
 			)
 		})
 
-		it("should throw a Zoo Code branded error when request is cancelled", async () => {
+		it("should throw a Ashnova Code branded error when request is cancelled", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [
 				{
@@ -2324,11 +2324,11 @@ describe("VsCodeLmHandler", () => {
 			mockLanguageModelChat.sendRequest.mockRejectedValueOnce(new vscode.CancellationError())
 
 			await expect(handler.createMessage(systemPrompt, messages).next()).rejects.toThrow(
-				"Zoo Code <Language Model API>: Request cancelled by user",
+				"Ashnova Code <Language Model API>: Request cancelled by user",
 			)
 		})
 
-		it("should throw a Zoo Code branded error on stream error with error-like object", async () => {
+		it("should throw a Ashnova Code branded error on stream error with error-like object", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [
 				{
@@ -2342,17 +2342,17 @@ describe("VsCodeLmHandler", () => {
 			mockLanguageModelChat.sendRequest.mockRejectedValueOnce({ code: "STREAM_ERROR", details: "broken" })
 
 			await expect(handler.createMessage(systemPrompt, messages).next()).rejects.toThrow(
-				"Zoo Code <Language Model API>: Response stream error:",
+				"Ashnova Code <Language Model API>: Response stream error:",
 			)
 
 			expect(consoleErrorSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Stream error object:",
+				"Ashnova Code <Language Model API>: Stream error object:",
 				expect.stringContaining("STREAM_ERROR"),
 			)
 
 			consoleErrorSpy.mockRestore()
 		})
-		it("should log Zoo Code branded warning for unknown chunk type in stream", async () => {
+		it("should log Ashnova Code branded warning for unknown chunk type in stream", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [{ role: "user" as const, content: "Hello" }]
 
@@ -2376,14 +2376,14 @@ describe("VsCodeLmHandler", () => {
 			}
 
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Unknown chunk type received:",
+				"Ashnova Code <Language Model API>: Unknown chunk type received:",
 				expect.objectContaining({ type: "unknown" }),
 			)
 
 			consoleWarnSpy.mockRestore()
 		})
 
-		it("should log Zoo Code branded warning for invalid text part value", async () => {
+		it("should log Ashnova Code branded warning for invalid text part value", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [{ role: "user" as const, content: "Hello" }]
 
@@ -2408,14 +2408,14 @@ describe("VsCodeLmHandler", () => {
 			}
 
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Invalid text part value received:",
+				"Ashnova Code <Language Model API>: Invalid text part value received:",
 				42,
 			)
 
 			consoleWarnSpy.mockRestore()
 		})
 
-		it("should log Zoo Code branded warning for invalid tool callId", async () => {
+		it("should log Ashnova Code branded warning for invalid tool callId", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [{ role: "user" as const, content: "Hello" }]
 
@@ -2440,14 +2440,14 @@ describe("VsCodeLmHandler", () => {
 			}
 
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Invalid tool callId received:",
+				"Ashnova Code <Language Model API>: Invalid tool callId received:",
 				123,
 			)
 
 			consoleWarnSpy.mockRestore()
 		})
 
-		it("should log Zoo Code branded warning for invalid tool input", async () => {
+		it("should log Ashnova Code branded warning for invalid tool input", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [{ role: "user" as const, content: "Hello" }]
 
@@ -2476,14 +2476,14 @@ describe("VsCodeLmHandler", () => {
 			}
 
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Invalid tool input received:",
+				"Ashnova Code <Language Model API>: Invalid tool input received:",
 				"not-an-object",
 			)
 
 			consoleWarnSpy.mockRestore()
 		})
 
-		it("should log Zoo Code branded error when tool call processing fails", async () => {
+		it("should log Ashnova Code branded error when tool call processing fails", async () => {
 			const systemPrompt = "You are a helpful assistant"
 			const messages: Anthropic.Messages.MessageParam[] = [{ role: "user" as const, content: "Hello" }]
 
@@ -2519,7 +2519,7 @@ describe("VsCodeLmHandler", () => {
 			}
 
 			expect(consoleErrorSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Failed to process tool call:",
+				"Ashnova Code <Language Model API>: Failed to process tool call:",
 				expect.any(Error),
 			)
 
@@ -2528,7 +2528,7 @@ describe("VsCodeLmHandler", () => {
 	})
 
 	describe("getClient", () => {
-		it("should log Zoo Code branded debug when creating client with selector", async () => {
+		it("should log Ashnova Code branded debug when creating client with selector", async () => {
 			const consoleDebugSpy = vi.spyOn(console, "debug").mockImplementation(() => {})
 			const mockModel = { ...mockLanguageModelChat }
 			;(vscode.lm.selectChatModels as Mock).mockResolvedValue([mockModel])
@@ -2538,25 +2538,25 @@ describe("VsCodeLmHandler", () => {
 			await handler["getClient"]()
 
 			expect(consoleDebugSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Creating client with selector:",
+				"Ashnova Code <Language Model API>: Creating client with selector:",
 				expect.any(Object),
 			)
 
 			consoleDebugSpy.mockRestore()
 		})
 
-		it("should throw a Zoo Code branded error when getClient fails to create client", async () => {
+		it("should throw a Ashnova Code branded error when getClient fails to create client", async () => {
 			const consoleErrorSpy = vi.spyOn(console, "error").mockImplementation(() => {})
 			;(vscode.lm.selectChatModels as Mock).mockRejectedValueOnce(new Error("network error"))
 			handler["client"] = null
 
 			// @ts-ignore – access private method for coverage
 			await expect(handler["getClient"]()).rejects.toThrow(
-				"Zoo Code <Language Model API>: Failed to create client:",
+				"Ashnova Code <Language Model API>: Failed to create client:",
 			)
 
 			expect(consoleErrorSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Client creation failed:",
+				"Ashnova Code <Language Model API>: Client creation failed:",
 				expect.stringContaining("network error"),
 			)
 
@@ -2571,7 +2571,7 @@ describe("VsCodeLmHandler", () => {
 			handler["client"] = mockLanguageModelChat
 			await handler.initializeClient()
 
-			expect(consoleDebugSpy).toHaveBeenCalledWith("Zoo Code <Language Model API>: Client already initialized")
+			expect(consoleDebugSpy).toHaveBeenCalledWith("Ashnova Code <Language Model API>: Client already initialized")
 
 			consoleDebugSpy.mockRestore()
 		})
@@ -2585,13 +2585,13 @@ describe("VsCodeLmHandler", () => {
 			await handler.initializeClient()
 
 			expect(consoleDebugSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Client initialized successfully",
+				"Ashnova Code <Language Model API>: Client initialized successfully",
 			)
 
 			consoleDebugSpy.mockRestore()
 		})
 
-		it("should throw a Zoo Code branded error when client initialization fails", async () => {
+		it("should throw a Ashnova Code branded error when client initialization fails", async () => {
 			const consoleErrorSpy = vi.spyOn(console, "error").mockImplementation(() => {})
 			;(vscode.lm.selectChatModels as Mock).mockRejectedValue(new Error("select failed"))
 			handler["client"] = null
@@ -2599,10 +2599,10 @@ describe("VsCodeLmHandler", () => {
 			// Catch the unhandled rejection that may occur from the constructor's async call
 			const initPromise = handler.initializeClient()
 
-			await expect(initPromise).rejects.toThrow("Zoo Code <Language Model API>: Failed to initialize client:")
+			await expect(initPromise).rejects.toThrow("Ashnova Code <Language Model API>: Failed to initialize client:")
 
 			expect(consoleErrorSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Client initialization failed:",
+				"Ashnova Code <Language Model API>: Client initialization failed:",
 				expect.stringContaining("select failed"),
 			)
 
@@ -2634,7 +2634,7 @@ describe("VsCodeLmHandler", () => {
 			expect(model.id).toBe("test-vendor/test-family")
 			expect(model.info).toBeDefined()
 			expect(consoleDebugSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: No client available, using fallback model info",
+				"Ashnova Code <Language Model API>: No client available, using fallback model info",
 			)
 
 			consoleDebugSpy.mockRestore()
@@ -2788,7 +2788,7 @@ describe("VsCodeLmHandler", () => {
 
 			expect(result).toBe(0)
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: No client available for token counting",
+				"Ashnova Code <Language Model API>: No client available for token counting",
 			)
 
 			consoleWarnSpy.mockRestore()
@@ -2816,7 +2816,7 @@ describe("VsCodeLmHandler", () => {
 
 			expect(result).toBe(0)
 			expect(consoleDebugSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Empty text provided for token counting",
+				"Ashnova Code <Language Model API>: Empty text provided for token counting",
 			)
 
 			consoleDebugSpy.mockRestore()
@@ -2833,7 +2833,7 @@ describe("VsCodeLmHandler", () => {
 
 			expect(result).toBe(0)
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Non-numeric token count received:",
+				"Ashnova Code <Language Model API>: Non-numeric token count received:",
 				"not-a-number",
 			)
 
@@ -2851,7 +2851,7 @@ describe("VsCodeLmHandler", () => {
 
 			expect(result).toBe(0)
 			expect(consoleWarnSpy).toHaveBeenCalledWith(
-				"Zoo Code <Language Model API>: Negative token count received:",
+				"Ashnova Code <Language Model API>: Negative token count received:",
 				-5,
 			)
 

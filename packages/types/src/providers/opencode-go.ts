@@ -5,7 +5,7 @@ import type { ModelInfo } from "../model.js"
 //
 // Model IDs are fetched dynamically from `https://opencode.ai/zen/go/v1/models`
 // so models can be switched on the fly. The endpoint currently omits metadata,
-// so Zoo Code supplies limits and capabilities from the registries below.
+// so Ashnova Code supplies limits and capabilities from the registries below.
 export const opencodeGoDefaultModelId = "glm-5.2"
 
 export const opencodeGoDefaultModelInfo: ModelInfo = {
@@ -16,7 +16,7 @@ export const opencodeGoDefaultModelInfo: ModelInfo = {
 	// Pricing is intentionally omitted: ModelInfoView renders a `0` field as "$0.00 / 1M tokens"
 	// (implying the service is free), so we leave it unknown — consistent with the dynamically
 	// fetched models, which also leave price fields absent. See PR #319 review.
-	description: "Opencode Go plan model. Model IDs are fetched dynamically; metadata uses Zoo Code's model registry.",
+	description: "Opencode Go plan model. Model IDs are fetched dynamically; metadata uses Ashnova Code's model registry.",
 }
 
 export const OPENCODE_GO_DEFAULT_TEMPERATURE = 0

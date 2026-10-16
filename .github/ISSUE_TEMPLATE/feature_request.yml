@@ -6,7 +6,7 @@ body:
     - type: markdown
       attributes:
           value: |
-              Thank you for helping improve Zoo Code.
+              Thank you for helping improve Ashnova Code.
               Describe the problem and the behavior you want.
 
               Write in Simplified Technical English (ASD-STE100): short sentences, plain words, active voice, one idea per sentence, no contractions. Keep the title short and specific.
@@ -58,9 +58,9 @@ body:
     - type: textarea
       id: roo-code-tasks
       attributes:
-          label: Zoo Code Task Links (optional)
-          description: If you tried this with Zoo Code, paste public task links.
-          placeholder: Paste your Zoo Code share links here, one per line
+          label: Ashnova Code Task Links (optional)
+          description: If you tried this with Ashnova Code, paste public task links.
+          placeholder: Paste your Ashnova Code share links here, one per line
 
     - type: markdown
       attributes:

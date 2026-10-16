@@ -1,5 +1,5 @@
 <p align="center">
-          <a href="https://marketplace.visualstudio.com/items?itemName=ZooCodeOrganization.zoo-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ashnova.ashnova-code"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
           <a href="https://x.com/ZooCodeDev"><img src="https://img.shields.io/badge/ZooCode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
           <a href="https://discord.gg/VxfP4Vx3gX"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
           <a href="https://www.reddit.com/r/ZooCode/"><img src="https://img.shields.io/badge/Join%20r%2FZooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/ZooCode"></a>
@@ -9,14 +9,14 @@
           <em>जल्दी मदद पाएं → <a href="https://discord.gg/VxfP4Vx3gX">Discord जॉइन करें</a> • Async पसंद है? → <a href="https://www.reddit.com/r/ZooCode/">r/ZooCode जॉइन करें</a></em>
         </p>
 
-        # Zoo Code
+        # Ashnova Code
 
         > तुम्हारी AI-संचालित डेवलपमेंट टीम, सीधे तुम्हारे एडिटर में
 
-        ## हम हैं Zoo Code
+        ## हम हैं Ashnova Code
 
 > Roo टीम के [Roomote](https://roomote.dev/) पर focus करने के लिए Roo Code का
-> active development बंद करने के बाद, Zoo Code इस project का development
+> active development बंद करने के बाद, Ashnova Code इस project का development
 > आगे बढ़ा रहा है। जो कुछ भी उन्होंने बनाया, उसके लिए Roo टीम का धन्यवाद।
 >
 > Core team ऐसे developers का समूह है जिन्होंने पहले Roo में योगदान दिया है
@@ -28,15 +28,15 @@
 > [Reddit](https://www.reddit.com/r/ZooCode), या
 > [PR या issue खोलें](https://github.com/Zoo-Code-Org/Zoo-Code) पर।
 >
-> _-Zoo Code Team_
+> _-Ashnova Code Team_
 
-## Roo Code से Zoo Code migration
+## Roo Code से Ashnova Code migration
 
-Roo Code से Zoo Code में आने के लिए एक quick guide तुम्हें [Roo→Zoo migration guide](https://docs.zoocode.dev/roo-to-zoo-migration) में मिल जाएगी। We plan to help users as much as possible during the transition, और उसी support के लिए हमारा [Reddit](https://www.reddit.com/r/ZooCode) और [Discord](https://discord.gg/VxfP4Vx3gX) है। अगर तुम्हें कोई problem हो या कोई question हो, आकर पूछो।
+Roo Code से Ashnova Code में आने के लिए एक quick guide तुम्हें [Roo→Zoo migration guide](https://docs.zoocode.dev/roo-to-zoo-migration) में मिल जाएगी। We plan to help users as much as possible during the transition, और उसी support के लिए हमारा [Reddit](https://www.reddit.com/r/ZooCode) और [Discord](https://discord.gg/VxfP4Vx3gX) है। अगर तुम्हें कोई problem हो या कोई question हो, आकर पूछो।
 
-## Roo Code के बाद Zoo Code ने क्या जोड़ा है
+## Roo Code के बाद Ashnova Code ने क्या जोड़ा है
 
-Zoo Code, Roo Code की बनाई नींव पर आगे बढ़ता है और इसे इन सुविधाओं के साथ लगातार विस्तार देता है:
+Ashnova Code, Roo Code की बनाई नींव पर आगे बढ़ता है और इसे इन सुविधाओं के साथ लगातार विस्तार देता है:
 
 - **Semble codebase intelligence** — तेज़, on-demand semantic code search, automatic setup के साथ और बिना किसी अलग indexing workflow के।
 - **ज़्यादा मज़बूत Orchestrator workflows** — अधिक सुरक्षित delegation, parallel task coordination, parent/child tasks की भरोसेमंद recovery और subtasks व provider profiles के बीच बेहतर isolation।
@@ -52,7 +52,7 @@ Zoo Code, Roo Code की बनाई नींव पर आगे बढ़�
 - 🧭 **Task भरोसेमंदपन:** यह release cancellation handling, tool-turn continuation और task-message saving को ठीक करती है।
 - ⚡ **तेज़ editing और chat:** File writes अब डिफ़ॉल्ट रूप से कृत्रिम देरी का उपयोग नहीं करतीं। Chat messages कम file data रखते हैं, और code actions अंतिम सक्रिय chat तक पहुँचते हैं।
 
-## Zoo Code आपके लिए क्या कर सकता है?
+## Ashnova Code आपके लिए क्या कर सकता है?
 
 - प्राकृतिक भाषा विवरण से कोड उत्पन्न करें
 - मोड के साथ अनुकूलन: कोड, आर्किटेक्ट, पूछें, डीबग और कस्टम मोड
@@ -76,7 +76,7 @@ Zoo Code, Roo Code की बनाई नींव पर आगे बढ़�
 
 ## संसाधन
 
-- **[दस्तावेज़ीकरण](https://docs.zoocode.dev):** Zoo Code को स्थापित करने, कॉन्फ़िगर करने और उसमें महारत हासिल करने के लिए आधिकारिक गाइड।
+- **[दस्तावेज़ीकरण](https://docs.zoocode.dev):** Ashnova Code को स्थापित करने, कॉन्फ़िगर करने और उसमें महारत हासिल करने के लिए आधिकारिक गाइड।
 - **[डिस्कॉर्ड सर्वर](https://discord.gg/VxfP4Vx3gX):** रीयल-टाइम सहायता और चर्चा के लिए समुदाय में शामिल हों।
 - **[रेडिट समुदाय](https://www.reddit.com/r/ZooCode):** अपने अनुभव साझा करें और देखें कि दूसरे क्या बना रहे हैं।
 - **[गिटहब मुद्दे](https://github.com/Zoo-Code-Org/Zoo-Code/issues):** बग की रिपोर्ट करें और विकास को ट्रैक करें।
@@ -106,7 +106,7 @@ pnpm install
 
 सक्रिय विकास के लिए, वीएसकोड के अंतर्निहित डिबगिंग का उपयोग करें:
 
-वीएसकोड में `F5` दबाएं (या **रन** → **डीबगिंग प्रारंभ करें** पर जाएं)। यह Zoo Code एक्सटेंशन के साथ एक नई वीएसकोड विंडो खोलेगा।
+वीएसकोड में `F5` दबाएं (या **रन** → **डीबगिंग प्रारंभ करें** पर जाएं)। यह Ashnova Code एक्सटेंशन के साथ एक नई वीएसकोड विंडो खोलेगा।
 
 - वेबव्यू में किए गए परिवर्तन तुरंत दिखाई देंगे।
 - कोर एक्सटेंशन में किए गए परिवर्तन भी स्वचालित रूप से हॉट रीलोड हो जाएंगे।
@@ -166,8 +166,8 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ## लाइसेंस
 
-[Apache 2.0 © 2025 Zoo Code Org](../../LICENSE)
+[Apache 2.0 © 2025 Ashnova Code Org](../../LICENSE)
 
 ---
 
-**Zoo Code का आनंद लें!** चाहे आप इसे short leash पर रखें या इसे autonomously घूमने दें, हम यह देखने के लिए उत्साहित हैं कि आप क्या बनाते हैं। अगर आपके पास questions या feature ideas हैं, तो एक [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) खोलें या एक [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions) शुरू करें। Happy coding!
+**Ashnova Code का आनंद लें!** चाहे आप इसे short leash पर रखें या इसे autonomously घूमने दें, हम यह देखने के लिए उत्साहित हैं कि आप क्या बनाते हैं। अगर आपके पास questions या feature ideas हैं, तो एक [issue](https://github.com/Zoo-Code-Org/Zoo-Code/issues) खोलें या एक [discussion](https://github.com/Zoo-Code-Org/Zoo-Code/discussions) शुरू करें। Happy coding!

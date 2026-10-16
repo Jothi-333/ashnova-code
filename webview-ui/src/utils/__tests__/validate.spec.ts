@@ -502,7 +502,7 @@ describe("Model Validation Functions", () => {
 				expect(result).toBe("settings:validation.zooGatewaySignIn")
 			})
 
-			it("returns undefined when Zoo Code auth is active without a profile token", () => {
+			it("returns undefined when Ashnova Code auth is active without a profile token", () => {
 				const config: ProviderSettings = {
 					apiProvider: providerIdentifiers.zooGateway,
 					zooGatewayModelId: "anthropic/claude-sonnet-4",
