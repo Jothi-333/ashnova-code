@@ -4,9 +4,7 @@ name: Post weekly release reminder
 # release-reminders channel. The reminder job fails (noisily) if it is unset.
 
 on:
-    schedule:
-        # Friday at 09:00 UTC
-        - cron: "0 9 * * 5"
+    # Disabled automatic runs in Ashnova fork (upstream Zoo Code publishing). Run manually if needed.
     workflow_dispatch:
 
 permissions: {}

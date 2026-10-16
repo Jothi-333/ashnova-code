@@ -1,9 +1,7 @@
 name: Publish Stable Extension
 
 on:
-    push:
-        tags:
-            - "v*.*.*"
+    # Disabled automatic runs in Ashnova fork (upstream Zoo Code publishing). Run manually if needed.
     workflow_dispatch:
 
 # Least privilege: publish-stable escalates to contents: write via its own
